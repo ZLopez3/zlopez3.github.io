@@ -4,15 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zac Lopez-Ibanez</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="homepagestyles.css">
 </head>
 <body>
-    <h1>The Begining of something starts here</h1>
+    <nav class="navbar">
+        <div class="weblilnks">
+            <table>
+                <tr>
+                    <th><h1 class="navtext">Zac Lopez-Ibanez</h1></th>
+                    <th><h2 class="navtext">Design</h2></th>
+                    <th><h2 class="navtext">Bio</h2></th>
+                    <th><h2 class="navtext">Nonsense</h2></th>
+                </tr>
+            </table>
+        </div>
+    
+         <div class="mobilenav">
+            <div id="myLinks">
+                <a href="#design">Design</a>
+                <a href="#contact">Bio</a>
+                <a href="#about">Nonsense</a>
+            </div>
+                <a href="javascript:void(0);" class="icon" onclick="expand()">
+                <div class="hamburger" ></div>
+    
+                </a>
+        </div>
+    </nav>
+
+    
+    
+    
+    <script>
+function expand() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
     
 </body>
-
-
-
-
-
 </html>
