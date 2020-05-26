@@ -121,7 +121,9 @@ h2{
 /*End of mobile nav*/
 
 @media only screen and (max-width: 600px) {
-    
+     body{
+        background-image: url('images/mobilebackground.jpg');
+    }
     .mobilenav a.icon {
         visibility:visible;
     
@@ -134,7 +136,9 @@ h2{
         visibility:collapse;
     }
 }
+
 @media only screen and (min-width: 600px) {
+    
 .mobilenav #myLinks{
        visibility:collapse; 
     }
