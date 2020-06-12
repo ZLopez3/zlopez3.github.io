@@ -4,33 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zac Lopez-Ibanez</title>
-    <link rel="stylesheet" type="text/css" href="homepagestyles.css">
+    <link rel="stylesheet" type="text/css" href="css/homepagestyles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="weblilnks">
-            <table>
-                <tr>
-                    <!--<th><h1 class="navtext"></h1></th>-->
-                    <th><h2 class="navtext">Design</h2></th>
-                    <th><h2 class="navtext">Bio</h2></th>
-                    <th><h2 class="navtext">Nonsense</h2></th>
-                </tr>
-            </table>
-        </div>
-    
+
          <div class="mobilenav">
             <div id="myLinks">
-                <a href="#design">Design</a>
-                <a href="#contact">Bio</a>
-                <a href="#about">Nonsense</a>
+               <a href="#2D">2D</a>
+                <a href="#3D">3D</a>
+                <a href="#contact">Contact</a>
             </div>
-                <a href="javascript:void(0);" class="icon" onclick="expand()">
-                <div class="hamburger" ></div>
-    
-                </a>
+                <a href="javascript:void(0);" class="icon" onclick="expand()"></a>
         </div>
-    </nav>
+  
 
     
     
@@ -38,8 +24,10 @@
     <script>
 function expand() {
   var x = document.getElementById("myLinks");
+    var nav = document.getElementsByClassName("mobilenav");
   if (x.style.display === "block") {
     x.style.display = "none";
+      
   } else {
     x.style.display = "block";
   }

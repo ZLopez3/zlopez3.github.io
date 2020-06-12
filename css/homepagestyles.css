@@ -16,31 +16,14 @@ html{
 body{
 margin:0;
 padding:0;
-background-image: url('images/background.jpg');
+background-image: url('../images/background.jpg');
 background-repeat: no-repeat;
 background-size: 100%;
 }
 
-.navbar{
-    width:100%;
-    height:5%;
-    max-height:40px;
-    position: relative;
-    display: block;
-    //background-color:rgba(222,222,222,0.8);
-    
-}
-.weblinks{
-    width:90%;
-    height:100%;
-    
-    
-}
-table{
-    width:90%;
-    height:100%;
-   
-}
+
+
+
 h1{
     font-size: 22px;
     font-weight:400;
@@ -64,53 +47,51 @@ h2{
 }
 /*Start of mobile nav*/
 .mobilenav {
-  float:right;
-  overflow: hidden;
-  width:10%;
-  height:100%;
+  right:0px;
+  overflow:visible;
+    position:absolute;
+  width:5%;
+  height:15px;
   min-width:100px;
+    padding: 0px;
+    margin:0px;
  
 }
 
 .mobilenav #myLinks{
-  display: none;
-  //visibility: collapse;
+  display:none;
+   background-color:rgba(255,255,255,0.2);
+    position: relative;
+    top:40px;
+    right:0px;
 }
 
 .mobilenav a {
   color: white;
-  padding: 5px;
+  padding: 5px 0 5px 5px;
+    
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
   display: block;
-  //background-color:#555;
   font-family: 'Nunito',sans-serif;
   font-weight:100;
  
 }
 
 .mobilenav a.icon {
-  background: #000;
-  position: absolute;
-    width:10px;
-    height:10px;
-  right: 1%;
-  top: 5%;
-  //transform: translate (-50%, -50%);
-  visibility:collapse;
+    background-color:rgba(255,255,255,0.2);
+    position: absolute;
+    width:100%;
+    height:30px;
+    top: 0px;
+    visibility:visible;
     cursor:pointer;
   
 }
-.hamburger{
-    width:100%;
-    height:1.5px;
-    background:#fff;
-    position:relative;
-    
-}
+
 
 .mobilenav a:hover {
-  background-color:rgba(255,255,255,0.2);
+  background-color:rgba(255,255,255,0.5);
   color: #000;
 }
 .active {
@@ -118,17 +99,18 @@ h2{
   color: white;
 }
 
-/*End of mobile nav*/
+
 
 @media only screen and (max-width: 600px) {
      body{
-        background-image: url('images/mobilebackground.jpg');
+        background-image: url('../images/mobilebackground.jpg');
     }
+    /*
     .mobilenav a.icon {
         visibility:visible;
     
     }
-    
+    */
     h1 ,h2{
        font-size:16px; 
     }
@@ -136,10 +118,11 @@ h2{
         visibility:collapse;
     }
 }
-
+/*
 @media only screen and (min-width: 600px) {
     
 .mobilenav #myLinks{
-       visibility:collapse; 
+       visibility:hidden; 
     }
 }
+*/
