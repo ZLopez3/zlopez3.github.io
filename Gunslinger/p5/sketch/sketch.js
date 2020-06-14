@@ -81,7 +81,7 @@ function setup() {
   file.play();
  
   textFont(font);
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(1000, 600);
   
   
     
