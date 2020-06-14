@@ -61,17 +61,17 @@ var rectX, rectY;
 var file, shot, yeeHaw;
 function preload(){
 
-titleFont = loadFont("../../data/MesquiteStd-34.vlw");
-font = loadFont("../../data/BlackoakStd-24.vlw");
-titleScreen = loadImage("../../data/GunslingerTitleCopy.png");
-GunSlingerTitle = loadImage("../../data/TitleCopy.png");
-img1 = loadImage("../../data/bullet.png");
-heart = loadImage("../../data/heart.png");
-gunman = loadImage("../../data/gunman1.png");
-gunman2 = loadImage("../../data/gunman2.png");
-bulletLeft = loadImage("../../data/BulletLeft.png");
-bulletRight = loadImage("../../data/BulletRight copy.png");
-gameBackground = loadImage( "../../data/West.png");
+titleFont = loadFont("fonts/MesquiteStd.otf");
+font = loadFont("fonts/BlackoakStd.otf");
+titleScreen = loadImage("images/GunslingerTitleCopy.png");
+GunSlingerTitle = loadImage("images/TitleCopy.png");
+img1 = loadImage("images/bullet.png");
+heart = loadImage("images/heart.png");
+gunman = loadImage("images/gunman1.png");
+gunman2 = loadImage("images/gunman2.png");
+bulletLeft = loadImage("images/BulletLeft.png");
+bulletRight = loadImage("images/BulletRight copy.png");
+gameBackground = loadImage( "images/West.png");
 }
 
 function setup() {
