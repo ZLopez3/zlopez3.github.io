@@ -320,11 +320,11 @@ function keyPressed() {
 function keyReleased() {
   //player 1 movement
 
-  if ((key === 's' || key === 'S') && player1Y >= 150 && player1Y<= 450) {
+  if ((keyIsDown(83)) && player1Y >= 150 && player1Y<= 450) {
     player1Y+=150;
-  } else if ((key === 'w' || key === 'W')&& player1Y >= 150 && player1Y <= 450) {
+  } else if ((keyIsDown(87))&& player1Y >= 150 && player1Y <= 450) {
     player1Y-=150;
-  } else if (key === 'd' || key === 'D') {
+  } else if (keyIsDown(68)) {
     //<body>   // player 1 firing a bullet
 
     // makes the gun shot sound when d is pressed 
