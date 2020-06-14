@@ -403,7 +403,7 @@ function westernTheme(x, y) {
 function draw() {
   //background(204);
   image(gameBackground, 0, 0, 1000, 625);
-  println(screenNum);
+  
     file.play();
   //player 1 doesn't go past the highest and lowest lanes
   if ( player1Y <150) {
