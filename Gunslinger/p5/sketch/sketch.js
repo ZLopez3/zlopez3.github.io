@@ -85,6 +85,7 @@ function setup() {
   
   
     
+    
   warpOn=0;
   warpX=width/2;
   warpY=height/3-50;
@@ -352,15 +353,15 @@ function keyReleased() {
   }
 
   //player 2 movement
-  if (keyCode === UP && player2Y >= 150 && player2Y <= 450) {
+  if (keyCode === UP_ARROW && player2Y >= 150 && player2Y <= 450) {
     player2Y-=150;
-  } else if (keyCode === DOWN && player2Y >= 150 && player2Y <= 450) {
+  } else if (keyCode === DOWN_ARROW && player2Y >= 150 && player2Y <= 450) {
     player2Y+=150;
-  } else if (keyCode === LEFT) {
+  } else if (keyCode === LEFT_ARROW) {
 
     // plays gunshot sound when LEFT is pressed.
     for ( var i=0; i< 6; i++) {
-      if (keyCode === LEFT && P2b[i] ===false&& screenNum===1 ) {
+      if (keyCode === LEFT_ARROW && P2b[i] ===false&& screenNum===1 ) {
         shot.play();
       }
     }
