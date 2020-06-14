@@ -83,7 +83,7 @@ function setup() {
   textFont(font);
   createCanvas(1000, 600);
   
-  imageMode(CENTER);
+  
     
   warpOn=0;
   warpX=width/2;
