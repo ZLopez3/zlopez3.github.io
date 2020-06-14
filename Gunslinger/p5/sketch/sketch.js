@@ -25,9 +25,9 @@ var warpX, warpY;
 var player1heath =  6;
 var player1X, player1Y;
 var P1bulletSpeed = 12;
-var P1bullets = new Array[numberOfBullets];
+var P1bullets = new Array(numberOfBullets);
 var P1bulletPOSx = new Array(numberOfBullets);
-var P1bulletPOSy= new Array(numberOfBullets);
+var P1bulletPOSy = new Array(numberOfBullets);
 var P1b = new Array(6);
 var P1bulletX = new Array(6);
 var P1bulletY = new Array(6);
@@ -42,11 +42,11 @@ var player2heath =  6;
 var player2X, player2Y;
 var P2bulletSpeed = 12;
 var P2bullets = new Array(numberOfBullets);
-var P2bulletPOSx= new Array(numberOfBullets);
-var P2bulletPOSy= new Array(numberOfBullets);
+var P2bulletPOSx = new Array(numberOfBullets);
+var P2bulletPOSy = new Array(numberOfBullets);
 var P2b = new Array(6);
 var P2bulletX = new Array(6);
-var P2bulletY = new Array(6); 
+var P2bulletY = new Array(6);
 var P2heart = new Array(numhearts);
 var P2heartX = new Array(numhearts);
 var P2heartY = new Array(numhearts);
@@ -59,27 +59,28 @@ var rectX, rectY;
 
 //import processing.sound.*;
 var file, shot, yeeHaw;
-
-
+file = loadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
+shot = loadSound("../../data/Gun+Luger.mp3");
+yeeHaw = loadSound("../../data/yeeHaw.mp3");
+titleFont = loadFont("../../data/MesquiteStd-34.vlw");
+font = loadFont("../../data/BlackoakStd-24.vlw");
+titleScreen = loadImage("../../dataGunslingerTitleCopy.png");
+GunSlingerTitle = loadImage("../../dataTitleCopy.png");
+img1 = loadImage("../../databullet.png");
+heart = loadImage("../../dataheart.png");
+gunman = loadImage("../../datagunman1.png");
+gunman2 = loadImage("../../datagunman2.png");
+bulletLeft = loadImage("../../dataBulletLeft.png");
+bulletRight = loadImage("../../dataBulletRight copy.png");
+gameBackground = loadImage( "../../dataWest.png");
 
 function setup() {
-  file = LoadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
-  shot = LoadSound("../../data/Gun+Luger.mp3");
-  yeeHaw= LoadSound("../../data/yeeHaw.mp3");
+
   file.play();
-  titleFont=loadFont("../../data/MesquiteStd-34.vlw");
-  font=loadFont("../../data/BlackoakStd-24.vlw");
+ 
   textFont(font);
   createCanvas(1000, 600);
-  titleScreen = loadImage("../../dataGunslingerTitleCopy.png");
-  GunSlingerTitle = loadImage("../../dataTitleCopy.png");
-  img1 = loadImage("../../databullet.png");
-  heart= loadImage("../../dataheart.png");
-  gunman = loadImage("../../datagunman1.png");
-  gunman2 = loadImage("../../datagunman2.png");
-  bulletLeft = loadImage("../../dataBulletLeft.png");
-  bulletRight = loadImage("../../dataBulletRight copy.png");
-  gameBackground = loadImage( "../../dataWest.png");
+  
 
   warpOn=0;
   warpX=width/2;
