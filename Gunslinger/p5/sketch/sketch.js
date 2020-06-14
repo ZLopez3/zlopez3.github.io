@@ -14,8 +14,7 @@ var GSY = -150;
 var font, titleFont;
 var img1, img2, gunman, gunman2, titleScreen, GunSlingerTitle, heart, gameBackground, bulletLeft, bulletRight;
 
-//import processing.sound.*;
-var file, shot, yeeHaw;
+
 
 var numberOfBullets = 6;
 var numhearts = 6;
@@ -26,7 +25,7 @@ var warpX, warpY;
 var player1heath =  6;
 var player1X, player1Y;
 var P1bulletSpeed = 12;
-var P1bullets = new Array(numberOfBullets);
+var P1bullets = new Array[numberOfBullets];
 var P1bulletPOSx = new Array(numberOfBullets);
 var P1bulletPOSy= new Array(numberOfBullets);
 var P1b = new Array(6);
@@ -58,26 +57,29 @@ var player2Alive;
 var screenNum;
 var rectX, rectY;
 
+//import processing.sound.*;
+var file, shot, yeeHaw;
+
 
 
 function setup() {
-  file = LoadSound("01_Track 01 - Conker's Pocket Tales.mp3");
-  shot = LoadSound("Gun+Luger.mp3");
-  yeeHaw= LoadSound("yeeHaw.mp3");
+  file = LoadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
+  shot = LoadSound("../../data/Gun+Luger.mp3");
+  yeeHaw= LoadSound("../../data/yeeHaw.mp3");
   file.play();
-  titleFont=loadFont("MesquiteStd-34.vlw");
-  font=loadFont("BlackoakStd-24.vlw");
+  titleFont=loadFont("../../data/MesquiteStd-34.vlw");
+  font=loadFont("../../data/BlackoakStd-24.vlw");
   textFont(font);
   createCanvas(1000, 600);
-  titleScreen = loadImage("GunslingerTitleCopy.png");
-  GunSlingerTitle = loadImage("TitleCopy.png");
-  img1 = loadImage("bullet.png");
-  heart= loadImage("heart.png");
-  gunman = loadImage("gunman1.png");
-  gunman2 = loadImage("gunman2.png");
-  bulletLeft = loadImage("BulletLeft.png");
-  bulletRight = loadImage("BulletRight copy.png");
-  gameBackground = loadImage( "West.png");
+  titleScreen = loadImage("../../dataGunslingerTitleCopy.png");
+  GunSlingerTitle = loadImage("../../dataTitleCopy.png");
+  img1 = loadImage("../../databullet.png");
+  heart= loadImage("../../dataheart.png");
+  gunman = loadImage("../../datagunman1.png");
+  gunman2 = loadImage("../../datagunman2.png");
+  bulletLeft = loadImage("../../dataBulletLeft.png");
+  bulletRight = loadImage("../../dataBulletRight copy.png");
+  gameBackground = loadImage( "../../dataWest.png");
 
   warpOn=0;
   warpX=width/2;
