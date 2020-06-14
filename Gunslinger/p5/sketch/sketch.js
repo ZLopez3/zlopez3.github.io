@@ -669,7 +669,7 @@ function draw() {
     rect(0, 0, width, height);
     fill(255);
     textAlign (CENTER);
-    textSize(30);      
+    textSize(18);      
     text( "Player 2 Wins! \n Winner Winner Chicken Dinner! \n Press Enter to Play Again", width/2, height/2);
     file.stop();
     break;
@@ -679,7 +679,7 @@ function draw() {
     rect(0, 0, width, height);
     fill(255);
     textAlign (CENTER);
-    textSize(30);
+    textSize(18);
     text( "Player 1 Wins \n Winner Winner Chicken Dinner! \n Press Enter to Play Again", width/2, height/2);
     file.stop();
     break;
