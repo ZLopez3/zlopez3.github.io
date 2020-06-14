@@ -75,9 +75,9 @@ gameBackground = loadImage( "../../dataWest.png");
 }
 
 function setup() {
-file = loadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
-shot = loadSound("../../data/Gun+Luger.mp3");
-yeeHaw = loadSound("../../data/yeeHaw.mp3");
+file = loadSound("audio/PocketTales.mp3");
+shot = loadSound("audio/GunLuger.mp3");
+yeeHaw = loadSound("audio/yeeHaw.mp3");
   file.play();
  
   textFont(font);
