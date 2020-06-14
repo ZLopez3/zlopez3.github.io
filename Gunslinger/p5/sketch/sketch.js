@@ -60,7 +60,9 @@ var rectX, rectY;
 //import processing.sound.*;
 var file, shot, yeeHaw;
 function preload(){
-
+file = loadSound("audio/PocketTales.mp3");
+shot = loadSound("audio/GunLuger.mp3");
+yeeHaw = loadSound("audio/yeeHaw.mp3");
 titleFont = loadFont("fonts/MesquiteStd.otf");
 font = loadFont("fonts/BlackoakStd.otf");
 titleScreen = loadImage("images/GunslingerTitleCopy.png");
@@ -75,9 +77,7 @@ gameBackground = loadImage( "images/West.png");
 }
 
 function setup() {
-file = loadSound("audio/PocketTales.mp3");
-shot = loadSound("audio/GunLuger.mp3");
-yeeHaw = loadSound("audio/yeeHaw.mp3");
+
   file.play();
  
   textFont(font);
