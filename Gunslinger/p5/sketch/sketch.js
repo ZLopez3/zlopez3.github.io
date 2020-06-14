@@ -71,7 +71,7 @@ gunman = loadImage("../../data/gunman1.png");
 gunman2 = loadImage("../../data/gunman2.png");
 bulletLeft = loadImage("../../data/BulletLeft.png");
 bulletRight = loadImage("../../data/BulletRight copy.png");
-gameBackground = loadImage( "../../dataWest.png");
+gameBackground = loadImage( "../../data/West.png");
 }
 
 function setup() {
