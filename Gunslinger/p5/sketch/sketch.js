@@ -317,7 +317,7 @@ function keyPressed() {
     yeeHaw.play();
   }
 }// keyPressed close bracket
-function keyTyped() {
+function keyReleased() {
   //player 1 movement
 
   if ((key === 's' || key === 'S') && player1Y >= 150 && player1Y<= 450) {
@@ -644,6 +644,7 @@ function draw() {
     fill(0);
     textFont(titleFont);
     textAlign(CENTER);
+    textSize(18);
     text("Welcome! \n Press Enter to Start", width/2, height-250); 
     text("player1: Up=W , Down=S, Fire=D", width/2, height-185);
     text("player2: Up=UP, Down=DOWN, Fire=LEFT", width/2, height-155);
@@ -668,6 +669,7 @@ function draw() {
     rect(0, 0, width, height);
     fill(255);
     textAlign (CENTER);
+    textSize(24);      
     text( "Player 2 Wins! \n Winner Winner Chicken Dinner! \n Press Enter to Play Again", width/2, height/2);
     file.stop();
     break;
@@ -677,6 +679,7 @@ function draw() {
     rect(0, 0, width, height);
     fill(255);
     textAlign (CENTER);
+    textSize(24);
     text( "Player 1 Wins \n Winner Winner Chicken Dinner! \n Press Enter to Play Again", width/2, height/2);
     file.stop();
     break;
