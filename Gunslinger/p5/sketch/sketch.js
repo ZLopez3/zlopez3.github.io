@@ -319,7 +319,7 @@ function keyPressed() {
 function keyReleased() {
   //player 1 movement
 
-  if ((key === 's' || key === 'S')&& player1Y >= 150 && player1Y<= 450) {
+  if ((key === 's' || key === 'S') && player1Y >= 150 && player1Y<= 450) {
     player1Y+=150;
   } else if ((key === 'w' || key === 'W')&& player1Y >= 150 && player1Y <= 450) {
     player1Y-=150;
