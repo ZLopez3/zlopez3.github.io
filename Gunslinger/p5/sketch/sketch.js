@@ -78,7 +78,7 @@ gameBackground = loadImage( "images/West.png");
 
 function setup() {
 
-  //file.play();
+  file.play();
  
   textFont(font);
   createCanvas(1000, 600);
@@ -404,7 +404,7 @@ function draw() {
   //background(204);
   image(gameBackground, 0, 0, 1000, 625);
   
-    file.play();
+    
   //player 1 doesn't go past the highest and lowest lanes
   if ( player1Y <150) {
     player1Y=150;
