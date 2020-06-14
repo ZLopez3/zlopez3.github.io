@@ -81,8 +81,8 @@ function setup() {
   file.play();
  
   textFont(font);
-  createCanvas(1000, 600);
-  
+  var canvas = createCanvas(1000, 600);
+  canvas.parent('sketch-div');
   
     
     
