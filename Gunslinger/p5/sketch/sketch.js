@@ -59,20 +59,22 @@ var rectX, rectY;
 
 //import processing.sound.*;
 var file, shot, yeeHaw;
+function preload(){
 file = loadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
 shot = loadSound("../../data/Gun+Luger.mp3");
 yeeHaw = loadSound("../../data/yeeHaw.mp3");
 titleFont = loadFont("../../data/MesquiteStd-34.vlw");
 font = loadFont("../../data/BlackoakStd-24.vlw");
-titleScreen = loadImage("../../dataGunslingerTitleCopy.png");
-GunSlingerTitle = loadImage("../../dataTitleCopy.png");
-img1 = loadImage("../../databullet.png");
-heart = loadImage("../../dataheart.png");
-gunman = loadImage("../../datagunman1.png");
-gunman2 = loadImage("../../datagunman2.png");
-bulletLeft = loadImage("../../dataBulletLeft.png");
-bulletRight = loadImage("../../dataBulletRight copy.png");
+titleScreen = loadImage("../../data/GunslingerTitleCopy.png");
+GunSlingerTitle = loadImage("../../data/TitleCopy.png");
+img1 = loadImage("../../data/bullet.png");
+heart = loadImage("../../data/heart.png");
+gunman = loadImage("../../data/gunman1.png");
+gunman2 = loadImage("../../data/gunman2.png");
+bulletLeft = loadImage("../../data/BulletLeft.png");
+bulletRight = loadImage("../../data/BulletRight copy.png");
 gameBackground = loadImage( "../../dataWest.png");
+}
 
 function setup() {
 
@@ -81,7 +83,6 @@ function setup() {
   textFont(font);
   createCanvas(1000, 600);
   
-
   warpOn=0;
   warpX=width/2;
   warpY=height/3-50;
