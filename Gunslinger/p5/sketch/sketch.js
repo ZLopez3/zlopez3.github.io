@@ -60,9 +60,7 @@ var rectX, rectY;
 //import processing.sound.*;
 var file, shot, yeeHaw;
 function preload(){
-file = loadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
-shot = loadSound("../../data/Gun+Luger.mp3");
-yeeHaw = loadSound("../../data/yeeHaw.mp3");
+
 titleFont = loadFont("../../data/MesquiteStd-34.vlw");
 font = loadFont("../../data/BlackoakStd-24.vlw");
 titleScreen = loadImage("../../data/GunslingerTitleCopy.png");
@@ -77,7 +75,9 @@ gameBackground = loadImage( "../../dataWest.png");
 }
 
 function setup() {
-
+file = loadSound("../../data/01_Track 01 - Conker's Pocket Tales.mp3");
+shot = loadSound("../../data/Gun+Luger.mp3");
+yeeHaw = loadSound("../../data/yeeHaw.mp3");
   file.play();
  
   textFont(font);
