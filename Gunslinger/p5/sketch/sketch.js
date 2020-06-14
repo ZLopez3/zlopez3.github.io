@@ -83,6 +83,8 @@ function setup() {
   textFont(font);
   createCanvas(1000, 600);
   
+  imageMode(CENTER);
+    
   warpOn=0;
   warpX=width/2;
   warpY=height/3-50;
@@ -180,7 +182,7 @@ function setup() {
 
 
 function keyPressed() {
-  if (screenNum == 3 && keyCode == ENTER ) {
+  if (screenNum === 3 && keyCode === ENTER ) {
 
     // ALL globals get set back to init values (ALL OF THEM)
 
@@ -246,7 +248,7 @@ function keyPressed() {
       P2bulletPOSy[i]= player2Y;
     }
   }
-  if (screenNum == 2 && keyCode == ENTER ) {
+  if (screenNum === 2 && keyCode === ENTER ) {
     // ALL globals get set back to init values (ALL OF THEM)
 
     player1heath =  6;
@@ -309,7 +311,7 @@ function keyPressed() {
       P2bulletPOSy[i]= player2Y;
     }
   }
-  if (screenNum == 0 && keyCode == ENTER ) {
+  if (screenNum === 0 && keyCode === ENTER ) {
     screenNum=1;
     yeeHaw.play();
   }
@@ -317,23 +319,23 @@ function keyPressed() {
 function keyReleased() {
   //player 1 movement
 
-  if ((key == 's' || key == 'S')&& player1Y >= 150 && player1Y<= 450) {
+  if ((key === 's' || key === 'S')&& player1Y >= 150 && player1Y<= 450) {
     player1Y+=150;
-  } else if ((key == 'w' || key == 'W')&& player1Y >= 150 && player1Y <= 450) {
+  } else if ((key === 'w' || key === 'W')&& player1Y >= 150 && player1Y <= 450) {
     player1Y-=150;
-  } else if (key == 'd' || key == 'D') {
+  } else if (key === 'd' || key === 'D') {
     //<body>   // player 1 firing a bullet
 
     // makes the gun shot sound when d is pressed 
     for ( var i=0; i< 6; i++) {
-      if (key == 'd' && P1b[i] ==false && screenNum==1 ) {
+      if (key === 'd' && P1b[i] === false && screenNum === 1 ) {
         shot.play();
       }
     }
 
     // find an unfired bullet (with boolean currently false) and fire it (turn its boolean true)
     for (var i = 0; i < numberOfBullets; i++) {
-      if (P1bullets[i] == false) { // we found an unfired bullet
+      if (P1bullets[i] === false) { // we found an unfired bullet
         P1bullets[i] = true; // make that bullet fired now
         P1bulletPOSx[i] = player1X; // set the bullet's current coordinates to the player's X position
         P1bulletPOSy[i] = player1Y;// set the bullet's current coordinates to the player's Y position
@@ -342,7 +344,7 @@ function keyReleased() {
     }
     // find a bullet in the holster and make it disappear if a bullet is drawn
     for (var i = 0; i < 6; i++) {
-      if (P1b[i] == false) { // we found an unfired bullet
+      if (P1b[i] === false) { // we found an unfired bullet
         P1b[i] = true; // make that bullet fired now
         break;// stops the loop
       }
@@ -350,21 +352,21 @@ function keyReleased() {
   }
 
   //player 2 movement
-  if (keyCode == UP && player2Y >= 150 && player2Y <= 450) {
+  if (keyCode === UP && player2Y >= 150 && player2Y <= 450) {
     player2Y-=150;
-  } else if (keyCode == DOWN && player2Y >= 150 && player2Y <= 450) {
+  } else if (keyCode === DOWN && player2Y >= 150 && player2Y <= 450) {
     player2Y+=150;
-  } else if (keyCode == LEFT) {
+  } else if (keyCode === LEFT) {
 
     // plays gunshot sound when LEFT is pressed.
     for ( var i=0; i< 6; i++) {
-      if (keyCode == LEFT && P2b[i] ==false&& screenNum==1 ) {
+      if (keyCode === LEFT && P2b[i] ===false&& screenNum===1 ) {
         shot.play();
       }
     }
     // find an unfired bullet (with boolean currently false) and fire it (turn its boolean true)
     for (var i = 0; i < numberOfBullets; i++) {
-      if (P2bullets[i] == false) { // we found an unfired bullet
+      if (P2bullets[i] === false) { // we found an unfired bullet
         P2bullets[i] = true; // make that bullet fired now
         P2bulletPOSx[i] = player2X; // set the bullet's current coordinates to the player's X position
         P2bulletPOSy[i] = player2Y;// set the bullet's current coordinates to the player's Y position
@@ -373,7 +375,7 @@ function keyReleased() {
     }
     // find a bullet in the holster and make it disappear if a bullet is drawn
     for (var i = 0; i < 6; i++) {
-      if (P2b[i] == false) { // we found an unfired bullet
+      if (P2b[i] === false) { // we found an unfired bullet
         P2b[i] = true; // make that bullet fired now
         break;// stops the loop
       }
@@ -402,6 +404,7 @@ function westernTheme(x, y) {
 
 function draw() {
   //background(204);
+
   image(gameBackground, 0, 0, 1000, 625);
   
     
@@ -427,19 +430,19 @@ function draw() {
 
 
   // makes the gunshot sound at the begining of the game.
-  if ( screenNum == 0 && frameCount == 250) {
+  if ( screenNum === 0 && frameCount === 250) {
     shot.play();
   }
 
 
 
   //current player1 and 2
-  if (player1Alive==true) {
+  if (player1Alive===true) {
     fill(230, 50, 50);
     image(gunman, player1X-25, player1Y-25, 50, 50);
     //ellipse(player1X, player1Y, 20, 20);
   }
-  if (player2Alive==true) {
+  if (player2Alive===true) {
     fill(88, 214, 234);
     image(gunman2, player2X-25, player2Y-25, 50, 50);
     // ellipse(player2X, player2Y, 20, 20);
@@ -460,20 +463,20 @@ function draw() {
 
   //6 bullets in the holster for Player1
   for (var i=0; i< 6; i++) {
-    if (P1b[i]==false) {
+    if (P1b[i] === false) {
       image(img1, P1bulletX [i], P1bulletY[i], 15, 41);
     }
   }
 
   //6 bullets in the holster for Player2
   for (var i=0; i< 6; i++) {
-    if (P2b[i]==false) {
+    if (P2b[i] === false) {
       image(img1, P2bulletX [i], P2bulletY[i], 15, 41);
     }
   }
   // player 1 bullets are drawn and they move
   for (var i = 0; i < numberOfBullets; i++) {
-    if (P1bullets[i]==true ) {
+    if (P1bullets[i] === true ) {
       image(bulletLeft, P1bulletPOSx[i]+15, P1bulletPOSy [i]-5, 20, 15);
       // rectMode(CENTER);
       //fill(255);
@@ -486,7 +489,7 @@ function draw() {
 
   // player 2 bullets are drawn and they move
   for (var i = 0; i < numberOfBullets; i++) {
-    if (P2bullets[i]==true ) {
+    if (P2bullets[i] === true ) {
       image(bulletRight, P2bulletPOSx[i]-30, P2bulletPOSy [i]-5, 20, 15);
       // rectMode(CENTER);
       // fill(255);
@@ -542,7 +545,7 @@ function draw() {
 
   //if any of the P1 bullets hits player 2, player 2 losses a life
   for (var i=0; i<numberOfBullets; i++) {
-    if ( dist(P1bulletPOSx[i], P1bulletPOSy[i], player2X, player2Y) < 5 && player2heath> 0  ) {
+    if ( dist(P1bulletPOSx[i], P1bulletPOSy[i], player2X, player2Y) < 5 && player2heath > 0  ) {
       //P2heart [i] =  true;
       player2heath --;
     }
@@ -554,7 +557,7 @@ function draw() {
   // if player 1 hits player 2 six times
 
   for (var i=0; i<numberOfBullets; i++) {
-    if ( player2heath<1) {
+    if ( player2heath < 1) {
       P1bullets [i]= false;
       P1bulletPOSx [i] = player1X;
       P1bulletPOSy [i] = player1Y;
@@ -566,7 +569,7 @@ function draw() {
   }
   // if player 2 hits player 1 six times
   for (var i=0; i<numberOfBullets; i++) {
-    if (  player1heath<1) {
+    if (  player1heath < 1) {
       P1bullets [i]= false;
       P2bulletPOSx [i] = player2X;
       P2bulletPOSy [i] = player2Y;
