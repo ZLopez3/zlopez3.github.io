@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
 html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-height: 1;}
-    h7, p{
+    h6,h7, p{
       
       font-weight: 300;
     }
@@ -25,12 +25,12 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         height:35px;
         background-color:#ebd35b;
         top:0px;
-        left:20px;
+        left:16px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         opacity:0.7;
         transition: 1s ease-in-out;
-        
+        box-shadow:5px 0px 15px #777; 
     }
     .return i{
         display:none;
@@ -39,7 +39,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         left:20px;
         top:-4px;
         animation-name: backbutton;
-        animation-duration: 1.2s;
+        animation-duration:  1.2s;
         animation-timing-function: ease-in-out;
     }
     .return:hover i{
@@ -47,6 +47,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
     }
     .return:hover{
         opacity:1;
+        box-shadow:5.3px 2.3px 15px #888; 
     }
     @keyframes backbutton{
         0%{left:90px; opacity:0.0;}
@@ -65,13 +66,13 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
 
     
     
-<div class="w3-row w3-white w3-container" >
+<div class="w3-row w3-white w3-container header" >
     
   <div class="w3-third w3-cell w3-container">
       <svg height="100%" width="100%"><line x1="90%" y1="0" x2="90%" y2="100%" style="stroke:rgb(0,0,0); stroke-width:1"/></svg>
   </div>
   <div class="w3-twothird w3-cell w3-container">
-      <p class="w3-xxlarge" style="margin:10px 0 10px 0px;"><b>Zac <br> Lopez-Ibanez</b></p>
+      <p class="w3-xxlarge" style="margin:20px 0 10px 0px;"><b>Zac <br> Lopez-Ibanez</b></p>
       <p class="w3-large" style="margin:0 0 10px 0px;">Product Designer</p>
   </div>
     
@@ -82,7 +83,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
   <div class="w3-row-padding">
   
     <!-- Left Column -->
-    <div class="w3-third" style="padding:0;">
+    <div class="w3-third leftCol" style="padding:0;">
     
       <div class="w3-white w3-text-black ">
        <!-- <div class="w3-display-container">
@@ -101,24 +102,25 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
 
           <p class="w3-xlarge"><b><i class=" fa-fw w3-margin-right "></i>Skills</b></p>
           <p class="w3-large w3-text-theme"><b><i class=" fa-fw w3-margin-right w3-text-teal"></i>Business</b></p>
+            <p>Communication</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:95%; height:5px; background-color:#e8e8e8;"></div>
+          </div>
           <p>Strategic Planning</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:90%; height:5px; background-color:#e8e8e8;"></div>
+            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:80%; height:5px; background-color:#e8e8e8;"></div>
           </div>
-          <p>Photography</p>
+          <p>Project Management</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:80%; height:5px; background-color:#e8e8e8;">
               <div class="w3-center w3-text-white"></div>
             </div>
           </div>
-          <p>Illustrator</p>
+          <p>Marketing</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:75%; height:5px; background-color:#e8e8e8;"></div>
           </div>
-          <p>Motion Graphics</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:50%; height:5px; background-color:#e8e8e8;"></div>
-          </div>
+          
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class=" fa-fw w3-margin-right w3-text-teal"></i>Design</b></p>
@@ -128,15 +130,19 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
           </div>
           <p>Graphic Design</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-grey" style="height:5px;width:100%;background-color:#e8e8e8;"></div>
+            <div class="w3-round-xlarge w3-grey" style="height:5px;width:90%;background-color:#e8e8e8;"></div>
           </div>
-          <p>Web Design</p>
+          <p>UX Design</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-grey" style="height:5px;width:65%;background-color:#e8e8e8;"></div>
+          </div>
+            <p>Web Design</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-grey" style="height:5px;width:50%;background-color:#e8e8e8;"></div>
           </div>
-            <p>UX Design</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-grey" style="height:5px;width:50%;background-color:#e8e8e8;"></div>
+            <p>Motion Graphics</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:50%; height:5px; background-color:#e8e8e8;"></div>
           </div>
             <p class="w3-large w3-text-theme"><b><i class=" fa-fw w3-margin-right w3-text-teal"></i>Technology</b></p>
             
@@ -175,25 +181,25 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
     </div>
 
     <!-- Right Column -->
-    <div class="w3-twothird" style="padding:0;">
+    <div class="w3-twothird rightCol" style="padding:0;">
      <!-- Work Experience section-->
       <div class="w3-container  w3-white ">
         <h2 class="w3-text-black     w3-padding-16"><i class=" fa-fw w3-margin-right w3-xxlarge "></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Product Designer | Anthroware LLC</b></h5>
-            <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019- Present</h6>
+            <h6 class="">May 2019- Present</h6>
           <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Founder & Principal Product Designer / Fehlo LLC</b></h5>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2018</h6>
+          <h6 class="">2014 - 2018</h6>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Visiting Lecturer / Rhode Island School of Design</b></h5>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+          <h6 class="">2015</h6>
           <p>Professional design practices lecture. </p><br>
         </div>
       </div>
@@ -203,14 +209,14 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         <h2 class="w3-text-black w3-padding-16"><i class=" fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>University of North Carolina at Asheville</b></h5>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020</h6>
+          <h6 class="">2017 - 2020</h6>
           <p>Bachelor of Arts in New Media, GPA 3.93</p>
           <p>Emphasis Area: Interactive Media & Video</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Savannah College of Art and Design</b></h5>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2010</h6>
+          <h6 class="">2008 - 2010</h6>
           <p>Bachelor of Arts in Design, GPA 3.84</p>
           <p>30 credits completed. </p>
           <hr>
@@ -220,7 +226,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         <div class="w3-container  w3-white">
         <h2 class="w3-text-black w3-padding-16"><i class=" fa-fw w3-margin-right w3-xxlarge "></i>Awards and Selected Publications</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of North Carolina at Asheville</b></h5>
+          
           <h6 class=""><i class=" fa-fw w3-margin-right"></i>2018 | UNCA Drexler Management Scholarship</h6>
             <h6 class=""><i class=" fa-fw w3-margin-right"></i>2017 | 2017 WNC Magazine Fall Design Issue | "Walking the Design Line"</h6>
             <h6 class=""><i class=" fa-fw w3-margin-right"></i>2016 | Grill Magazine | Spring Catalog</h6>
