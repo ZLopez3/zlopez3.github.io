@@ -16,6 +16,9 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
       
       font-weight: 300;
     }
+    h5{
+        font-weight:600;
+    }
     body{
         background-color:#f2f2f2;
     }
@@ -54,6 +57,12 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         100%{left:20px; opacity:1;}
     }
     
+    @media only screen and (max-width: 600px){
+        div.w3-twothird.w3-cell.w3-container.headerTitle{
+            margin:0;
+            padding:0;
+        }
+    }
     
 </style>
     
@@ -71,9 +80,9 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
   <div class="w3-third w3-cell w3-container">
       <svg height="100%" width="100%"><line x1="90%" y1="0" x2="90%" y2="100%" style="stroke:rgb(0,0,0); stroke-width:1"/></svg>
   </div>
-  <div class="w3-twothird w3-cell w3-container">
-      <p class="w3-xxlarge" style="margin:20px 0 10px 0px;"><b>Zac <br> Lopez-Ibanez</b></p>
-      <p class="w3-large" style="margin:0 0 10px 0px;">Product Designer</p>
+  <div class="w3-twothird w3-cell w3-container headerTitle" >
+      <p class="w3-xxlarge headerTitle" style="margin:20px 0 10px 10px;"><b>Zac <br> Lopez-Ibanez</b></p>
+      <p class="w3-large headerTitle" style="margin:0 0 10px 10px;">Product Designer</p>
   </div>
     
     
@@ -170,9 +179,6 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
             <p>Git VC</p>
                 </div>
             </div>
-            
-            
-          
           <br>
         </div>
       </div><br>
@@ -186,19 +192,19 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
       <div class="w3-container  w3-white ">
         <h2 class="w3-text-black     w3-padding-16"><i class=" fa-fw w3-margin-right w3-xxlarge "></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Product Designer | Anthroware LLC</b></h5>
+          <h5 class="w3-opacity">Product Designer | Anthroware LLC</h5>
             <h6 class="">May 2019- Present</h6>
           <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Founder & Principal Product Designer / Fehlo LLC</b></h5>
+          <h5 class="w3-opacity">Founder & Principal Product Designer / Fehlo LLC</h5>
           <h6 class="">2014 - 2018</h6>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Visiting Lecturer / Rhode Island School of Design</b></h5>
+          <h5 class="w3-opacity">Visiting Lecturer / Rhode Island School of Design</h5>
           <h6 class="">2015</h6>
           <p>Professional design practices lecture. </p><br>
         </div>
@@ -206,16 +212,16 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         
         <!-- Education section-->
       <div class="w3-container  w3-white ">
-        <h2 class="w3-text-black w3-padding-16"><i class=" fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
+        <h2 class="w3-text-black w3-padding-16">Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of North Carolina at Asheville</b></h5>
+          <h5 class="w3-opacity">University of North Carolina at Asheville</h5>
           <h6 class="">2017 - 2020</h6>
           <p>Bachelor of Arts in New Media, GPA 3.93</p>
           <p>Emphasis Area: Interactive Media & Video</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Savannah College of Art and Design</b></h5>
+          <h5 class="w3-opacity">Savannah College of Art and Design</h5>
           <h6 class="">2008 - 2010</h6>
           <p>Bachelor of Arts in Design, GPA 3.84</p>
           <p>30 credits completed. </p>
@@ -224,7 +230,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
       </div>
         <!-- Awards and Publications section-->
         <div class="w3-container  w3-white">
-        <h2 class="w3-text-black w3-padding-16"><i class=" fa-fw w3-margin-right w3-xxlarge "></i>Awards and Selected Publications</h2>
+        <h2 class="w3-text-black w3-padding-16">Awards and Selected Publications</h2>
         <div class="w3-container">
           
           <p class="w3-medium">2018 | UNCA Drexler Management Scholarship</p>
