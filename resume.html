@@ -58,6 +58,23 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
         100%{left:20px; opacity:1;}
     }
     
+   
+    .line{
+        -webkit-animation: line 1s linear forwards;
+        
+        
+        
+    }
+    @-webkit-keyframes line{
+        from {
+           
+           
+        }
+        to{
+          
+        }
+    }
+    
     @media only screen and (max-width: 600px){
         div.w3-twothird.w3-cell.w3-container.headerTitle{
             margin:5px;
@@ -82,7 +99,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-heig
 <div class="w3-row w3-white w3-container header" >
     
   <div class="w3-third w3-cell w3-container">
-      <svg height="100%" width="100%"><line x1="90%" y1="0" x2="90%" y2="100%" style="stroke:rgb(0,0,0); stroke-width:1"/></svg>
+      <svg height="100%" width="100%"><path class="line" x1="90%" y1="0" x2="90%" y2="100%" style="stroke:rgb(0,0,0); stroke-width:1"/></svg>
   </div>
   <div class="w3-twothird w3-cell w3-container headerTitle" >
       <p class="w3-xxlarge headerTitle" style="margin:20px 0 10px 0px;"><b>Zac <br> Lopez-Ibanez</b></p>
