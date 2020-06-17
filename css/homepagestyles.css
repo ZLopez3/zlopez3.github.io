@@ -118,7 +118,7 @@ position: absolute;
 }
 #circ:hover{
     background-color:#f2de9b;
-     border: solid #777 0px;
+     border: solid #f2de9b 1px;
 }
 
 a{
