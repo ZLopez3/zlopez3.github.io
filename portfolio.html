@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif; }
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+    
+.categoryBtn button{
+       width:100px;
+    border-radius:25px;
+    background-color: #888;
+    }
+    
+    
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">CV</a>
+   
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+    
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Portfolio</b></h1>
+  <p><b>A smattering of work</b></p>
+    <p class="w3-padding-16 w3-third categoryBtn"><button id="catbtn2D"class="w3-button " onclick="twoDFunction()">2D</button></p>
+    
+    <p class="w3-padding-16 w3-third categoryBtn"><button id="catbtn3D" class="w3-button " onclick="threeDFunction()">3D</button></p>
+    
+    <p class="w3-padding-16 w3-third categoryBtn"><button id="catbtnother" class="w3-button " onclick="otherfunction()">Other</button></p>
+</header>
+    
+</div>
+
+<!-- Grid 2D-->
+<div class="w3-row" id="2DGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="images/portfolio/2d/A%5E.png" style="width:100%">
+    <img src="images/portfolio/2d/" style="width:100%">
+    <img src="images/portfolio/2d/" style="width:100%">
+    <img src="images/portfolio/2d/P6.Design2.jpg" style="width:100%">
+    <img src="images/portfolio/2d/Frankie2.gif" style="width:100%">
+    <img src="images/portfolio/2d/P8_Design3.png" style="width:100% ">
+    
+  </div>
+
+  <div class="w3-third" >
+    <img src="images/portfolio/2d/TurnItOffV2.png" style="width:100%">
+    <img src="images/portfolio/2d/PIR.gif" style="width:100%">
+    <img src="images/portfolio/2d/notebook.jpg" style="width:100%">
+    <img src="images/portfolio/2d/london.jpg" style="width:100%">
+    <img src="images/portfolio/2d/rocks.jpg" style="width:100%">
+    <img src="images/portfolio/2d/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/portfolio/2d/CD_Cover.jpg" style="width:100%">
+    <img src="images/portfolio/2d/workbench.jpg" style="width:100%">
+    <img src="images/portfolio/2d/gondol.jpg" style="width:100%">
+    <img src="images/portfolio/2d/skies.jpg" style="width:100%">
+    <img src="images/portfolio/2d/lights.jpg" style="width:100%">
+    <img src="images/portfolio/2d/workshop.jpg" style="width:100%">
+  </div>
+</div>
+
+    <!-- Grid 3D-->
+   
+<div class="w3-row" id="3DGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="images/portfolio/3d/Fehlo_bowl.jpg" style="width:100%">
+    <img src="images/portfolio/3d/Fehlo_Peel.jpg" style="width:100%">
+    <img src="images/portfolio/3d/ZacLopez06_14_03.jpg" style="width:100%">
+    <img src="images/portfolio/3d/ZacLopez06_14_07.jpg" style="width:100%">
+    <img src="images/portfolio/3d/" style="width:100%">
+    <img src="images/portfolio/3d/" style="width:100% ">
+    
+  </div>
+
+  <div class="w3-third" >
+    <img src="images/portfolio/3d/Eastfork%20tong%20image.jpg" style="width:100%">
+    <img src="images/portfolio/3d/FEHLO_tumbler%20web.jpg" style="width:100%">
+    <img src="images/portfolio/3d/grain%20containers.jpg" style="width:100%">
+    <img src="images/portfolio/3d/london.jpg" style="width:100%">
+    <img src="images/portfolio/3d/rocks.jpg" style="width:100%">
+    <img src="images/portfolio/3d/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/portfolio/3d/Baseline-LATImes.jpg" style="width:100%">
+    <img src="images/portfolio/3d/Telfrid%20Table2_1500.jpg" style="width:100%">
+    <img src="images/portfolio/3d/gondol.jpg" style="width:100%">
+    <img src="images/portfolio/3d/skies.jpg" style="width:100%">
+    <img src="images/portfolio/3d/lights.jpg" style="width:100%">
+    <img src="images/portfolio/3d/Fehlo_tongs%20web.jpg" style="width:100%">
+  </div>
+</div>
+   
+       <!-- Grid other-->
+   
+<div class="w3-row" id="otherGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="images/portfolio/other/P6.Design2.jpg" style="width:100%">
+    <img src="images/portfolio/other/boon.jpg" style="width:100%">
+    <img src="images/portfolio/other/woods.jpg" style="width:100%">
+    <img src="images/portfolio/other/boon.jpg" style="width:100%">
+    <img src="images/portfolio/other/fake.jpg" style="width:100%">
+    <img src="images/portfolio/other/fake.jpg" style="width:100% ">
+    
+  </div>
+
+  <div class="w3-third">
+    <img src="images/portfolio/other/fake.jpg" style="width:100%">
+    <img src="images/portfolio/other/fake.jpg" style="width:100%">
+    <img src="images/portfolio/other/notebook.jpg" style="width:100%">
+    <img src="images/portfolio/other/london.jpg" style="width:100%">
+    <img src="images/portfolio/other/rocks.jpg" style="width:100%">
+    <img src="images/portfolio/other/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/portfolio/other/mist.jpg" style="width:100%">
+    <img src="images/portfolio/other/workbench.jpg" style="width:100%">
+    <img src="images/portfolio/other/gondol.jpg" style="width:100%">
+    <img src="images/portfolio/other/skies.jpg" style="width:100%">
+    <img src="images/portfolio/other/lights.jpg" style="width:100%">
+    <img src="images/portfolio/other/workshop.jpg" style="width:100%">
+  </div>
+</div>
+   
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <a href="https://www.instagram.com/zlopappypants/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.pinterest.com/zaclopezibanez/boards/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/zac-lopez-ibanez-9348a234/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  
+</footer>
+ 
+<script>
+// Toggle grid padding
+     document.getElementById("2DGrid").style.display = "none";
+    document.getElementById("3DGrid").style.display = "block";
+    document.getElementById("otherGrid").style.display = "none";
+    document.getElementById("catbtn3D").style.backgroundColor="#ebd35b";
+
+   /* 
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+*/ 
+//Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+ 
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+   
+
+function twoDFunction() {
+    document.getElementById("2DGrid").style.display = "block";
+    document.getElementById("catbtn2D").style.backgroundColor="#ebd35b";
+    
+    document.getElementById("3DGrid").style.display = "none";
+    document.getElementById("catbtn3D").style.backgroundColor="#888";
+    
+    document.getElementById("otherGrid").style.display = "none";
+    document.getElementById("catbtnother").style.backgroundColor="#888";
+    console.log("one");
+} 
+    
+function threeDFunction(){
+    document.getElementById("2DGrid").style.display = "none";
+    document.getElementById("catbtn2D").style.backgroundColor="#888";
+    
+    document.getElementById("3DGrid").style.display = "block";
+    document.getElementById("catbtn3D").style.backgroundColor="#ebd35b";
+    
+    document.getElementById("otherGrid").style.display = "none";
+    document.getElementById("catbtnother").style.backgroundColor="#888";
+    console.log("two");
+}
+    
+function otherfunction(){
+    document.getElementById("2DGrid").style.display = "none";
+    document.getElementById("catbtn2D").style.backgroundColor="#888";
+    
+    document.getElementById("3DGrid").style.display = "none";
+    document.getElementById("catbtn3D").style.backgroundColor="#888";
+    
+    document.getElementById("otherGrid").style.display = "block";
+    document.getElementById("catbtnother").style.backgroundColor="#ebd35b";
+    console.log("three");
+}
+</script>
+
+</body>
+</html>
