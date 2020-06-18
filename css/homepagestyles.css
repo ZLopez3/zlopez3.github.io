@@ -29,7 +29,7 @@ background-color:#f2f2f2;
     position: relative;
     width: 40%;
     margin: 0 auto;
-    top: 150px;
+    top: 100px;
     opacity: 0.7;
     width: 80%;
     max-width: 550px;
@@ -46,7 +46,7 @@ position: absolute;
 }
 #work h2{
     position: absolute;
-    top:50px;
+    top:30px;
     left:40px;
     text-decoration: underline;
     color:#555;
@@ -59,7 +59,7 @@ position: absolute;
 }
 #cv h2{
      position: absolute;
-    top:50px;
+    top:30px;
     right:40px;
     color:#999;
     font-weight: 500;
