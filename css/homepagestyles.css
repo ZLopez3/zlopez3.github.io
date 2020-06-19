@@ -26,10 +26,11 @@ margin:0 auto;
 
 .page-container{
     margin:0 auto;
-    width:95%;
+    width:100%;
     height:100%;
     background-color:#f2f2f2;
 }
+
 .background img{
        display: block;
     position: relative;
@@ -46,8 +47,8 @@ margin:0 auto;
 position: absolute;
     margin: 0 auto;
     left: 52.7%;
-    top: 270px;
-    opacity:0.8;
+    top: 450px;
+    opacity:0.3;
     
     
 }
@@ -76,19 +77,22 @@ position: absolute;
   color:#f2de9b;
 }
 #info h2{
-     position: relative;
-    bottom:-100px;
+     position: absolute;
+    bottom:100px;
     left:40px;
     color:#999;
     opacity: 0.5;
     font-weight: 200;
+    width:50px;
+    margin:0;
+    
 }
 #info h2:hover{
     color:#f2de9b;
 }
 #vertical h2{
     position: relative;
-    //padding:10px;
+    padding-right: 0px;
     left: 21%;
     top: -400px;
     color: #999;
@@ -96,26 +100,29 @@ position: absolute;
     font-weight: 200;
     transform: rotate(90deg);
     width: 80px;
+    height: 100px;
+    margin: 0;
 }
 #vertical h2:hover{
     color:#f2de9b;
 }
 #line h2{
-    margin:0 auto;
+    margin:20px 0;
      position: relative;
     padding:10px;
-    left: 33%;
-    top: -100px;
+    left: 73%;
+    top:-100px;
     color: #999;
     opacity: 0.9;
     font-weight: 200;
-    width: 500px; 
+    width:200px;
 }
 #circ{
-     margin:0 auto;
-     position: relative;
-    left: 44%;
-    top: -100px;
+     margin:0 ;
+    padding:0;
+    position: absolute;
+    right: 5%;
+    bottom: 50px;
     width: 50px;
     height:50px;
     border: solid #777 1px;
@@ -124,12 +131,15 @@ position: absolute;
     
 }
 #circ:hover{
-    background-color:#f2de9b;
-     border: solid #f2de9b 1px;
+    background-image:url(../images/playbutton.png);
+    background-size: contain;
+    border: solid #f2de9b 1px;
 }
 
 a{
   text-decoration: none;  
+    margin:0;
+    padding:0;
 }
 
 
@@ -236,16 +246,25 @@ position:absolute;
     margin: 0 auto;
     left: 33.7%;
     top: 340px;
-        opacity:0.3;
+        
     }
     #circ{
         display:none;
     }
     #line h2{
-        top: 50px;
+        top: 100px;
+        left:40%;
     }
     #vertical h2{
         display:none;
+    }
+    #info h2{
+        top:585px;
+        left:40px;
+        margin-bottom:0;
+    }
+    .page-container{
+        padding-top:50px;
     }
 }
 /*
