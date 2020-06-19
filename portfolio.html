@@ -16,25 +16,42 @@ img {margin-bottom: 0px}
     border-radius:25px;
     background-color: #888;
     }
-    img:hover{
-       opacity:0.5;
-    }
- .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #C5D8DC;
-}
-.one:hover .overlay {
-  opacity: .7;
-}
     
+    .img-container{
+        width:100%;
+       
+        opacity:1;
+        margin:0;
+        padding:0;
+         
+    }
+    img{
+        padding:0;
+        margin:0;
+        opacity:1;
+    }
+   
+    a{
+        height:100%;
+        text-decoration: none;
+    }
+    #gridimg:hover{
+       opacity:0.7;
+        cursor:pointer;
+        
+    }
+    .modalimg{
+        width:100%;
+        padding-top:15px;
+        opacity:1;
+        
+    }
+   
+
+    .w3-modal{
+        background-color:rgba(0,0,0,0.8);
+    }
+  
 </style>
 <body>
 
@@ -72,33 +89,217 @@ img {margin-bottom: 0px}
 </div>
 
 <!-- Grid 2D-->
-<div class="w3-row" id="2DGrid" style="margin-bottom:128px">
-  <div class="w3-third"> 
-    <a href="images/portfolio/2d/A%5E.png"><img src="images/portfolio/2d/A%5E.png" style="width:100%"></a>
-   <a href="images/portfolio/2d/"> <img src="images/portfolio/2d/" style="width:100%"></a>
-    <a href="images/portfolio/2d/"><img src="images/portfolio/2d/" style="width:100%"></a>
-    <a href="images/portfolio/2d/P6.Design2.jpg"><img src="images/portfolio/2d/P6.Design2.jpg" style="width:100%"></a>
-    <a href="images/portfolio/2d/Frankie2.gif"><img src="images/portfolio/2d/Frankie2.gif" style="width:100%"></a>
-   <a href="images/portfolio/2d/P8_Design3.png"><img src="images/portfolio/2d/P8_Design3.png" style="width:100% "></a>
+<div class="w3-row " id="2DGrid" style="margin-bottom:128px">
     
+     <!--2D row left-->
+  <div class="w3-third"> 
+      <div class="img-container ">
+        <img id="gridimg" src="images/portfolio/2d/A%5E.png" style="width:100%;" onclick="modalOpen('id01')">
+        
+        <div id="id01" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id01')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/A%5E_768px.png" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="img-container ">
+        
+        <img id="gridimg" src="images/portfolio/2d/P6.Design2.jpg" style="width:100%" onclick="modalOpen('id02')">
+         <div id="id02" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id02')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/P6.Design2.jpg" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="img-container ">
+        
+        <img id="gridimg" src="images/portfolio/2d/zlopezib_Project3.10.gif" style="width:100%" onclick="modalOpen('id03')"> <div id="id03" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id03')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/zlopezib_Project3.10.gif" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="img-container ">
+        
+        <img id="gridimg" src="images/portfolio/2d/2014-06-11%2009.15.35.jpg" style="width:100%" onclick="modalOpen('id04')"> <div id="id04" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id04')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/2014-06-11%2009.15.35.jpg" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div> 
+      <div class="img-container ">
+        
+        <img id="gridimg" src="images/portfolio/2d/AnimaArts.gif" style="width:100%" onclick="modalOpen('id05')"> <div id="id05" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id05')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/AnimaArts.gif" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/" style="width:100%" onclick="modalOpen()"> <div id="id01" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose()" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
   </div>
 
+     <!--2D row middle-->
   <div class="w3-third" >
-    <img src="images/portfolio/2d/TurnItOffV2.png" style="width:100%">
-    <img src="images/portfolio/2d/PIR.gif" style="width:100%">
-    <img src="images/portfolio/2d/notebook.jpg" style="width:100%">
-    <img src="images/portfolio/2d/london.jpg" style="width:100%">
-    <img src="images/portfolio/2d/rocks.jpg" style="width:100%">
-    <img src="images/portfolio/2d/avatar_g.jpg" style="width:100%">
+     <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/E%5E.png" style="width:100%" onclick="modalOpen('id07')"> 
+         <div id="id07" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id07')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/E%5E.png" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/Frankie2.gif" style="width:100%" onclick="modalOpen('id08')"> <div id="id08" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id08')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/Frankie2.gif" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/PIR.gif" style="width:100%" onclick="modalOpen('id09')"> <div id="id09" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id09')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/PIR.gif" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/P8_Design3.png" style="width:100%" onclick="modalOpen('id10')"> <div id="id10" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id10')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/P8_Design3.png" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/TeamShot.png" style="width:100%" onclick="modalOpen('id11')"> <div id="id11" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id11')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/TeamShot.png" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/" style="width:100%" onclick="modalOpen()"> <div id="id01" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose()" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
   </div>
+    
 
+    <!--2D row right-->
   <div class="w3-third">
-    <img src="images/portfolio/2d/CD_Cover.jpg" style="width:100%">
-    <img src="images/portfolio/2d/workbench.jpg" style="width:100%">
-    <img src="images/portfolio/2d/gondol.jpg" style="width:100%">
-    <img src="images/portfolio/2d/skies.jpg" style="width:100%">
-    <img src="images/portfolio/2d/lights.jpg" style="width:100%">
-    <img src="images/portfolio/2d/workshop.jpg" style="width:100%">
+      <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/D%5E.png" style="width:100%" onclick="modalOpen('id13')"> <div id="id13" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('id13')" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/D%5E.png" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/" style="width:100%" onclick="modalOpen()"> <div id="id01" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose()" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/2d/" style="width:100%" onclick="modalOpen()"> <div id="id01" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose()" style="font-size:30px; font-style: normal; text-align: center;">&times;</i>
+                  <img src="images/portfolio/2d/" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
   </div>
 </div>
 
@@ -180,20 +381,26 @@ img {margin-bottom: 0px}
 </footer>
  
 <script>
+    
+    
+    
+    function modalOpen(id){
+        document.getElementById(id).style.display='block'
+    }
+    function modalClose(id){
+        document.getElementById(id).style.display='none'
+    }
+    
+    
 // Toggle grid padding
      document.getElementById("2DGrid").style.display = "none";
     document.getElementById("3DGrid").style.display = "block";
     document.getElementById("otherGrid").style.display = "none";
     document.getElementById("catbtn3D").style.backgroundColor="#ebd35b";
 
-   /* 
-  if (x.className === "w3-row") {
-    x.className = "w3-row-padding";
-  } else { 
-    x.className = x.className.replace("w3-row-padding", "w3-row");
-  }
-}
-*/ 
+ 
+  
+   
 //Open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.width = "100%";
