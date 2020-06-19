@@ -45,22 +45,8 @@ function expand() {
         //track provided by freemusicarchive.com | Artist:tay_ploops Track:gawn Album:ta_rot
         var audio = new Audio('audio/tay_ploops-10-gawn.mp3');
         var isPlaying = false;
-        var flag = false;
-    function play(){
-        
-        if(flag){
-            audio.pause();
-            flag = false;
-            console.log(flag);
-        }
-        if (!flag){  
-           audio.play(); 
-            flag = true;
-            console.log(flag);  
-        }
-        
-        
-    }
+    
+  
         function togglePlay() {
   if (isPlaying) {
     audio.pause()
