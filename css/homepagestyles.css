@@ -234,7 +234,7 @@ position:absolute;
         overflow: hidden;
         position: absolute;
     margin: 0 auto;
-    left: 35.7%;
+    left: 33.7%;
     top: 340px;
         opacity:0.3;
     }
@@ -242,7 +242,7 @@ position:absolute;
         display:none;
     }
     #line h2{
-        top: -120px;
+        top: 50px;
     }
     #vertical h2{
         display:none;
