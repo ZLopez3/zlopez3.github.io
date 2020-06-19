@@ -128,12 +128,14 @@ position: absolute;
     border: solid #777 1px;
     border-radius: 50px;
     display:block;
+    transition: all 1s ease-out;
     
 }
 #circ:hover{
-    background-image:url(../images/playbutton.png);
-    background-size: contain;
-    border: solid #f2de9b 1px;
+    background-image:url(../images/playbutton_light.png);
+    background-size: 100%;
+    border: solid #ccbca3 1px;
+    background-position: -.3px -.3px;
 }
 
 a{
