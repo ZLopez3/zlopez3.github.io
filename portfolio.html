@@ -11,14 +11,27 @@ body,h1 {font-family: "Montserrat", sans-serif; }
 img {margin-bottom: 0px}
 .w3-row-padding img {margin-bottom: 12px}
     
+    #buttonContainer{     
+    height: 90px;
+    display: block;
+    //background-color: #333;
+    }    
+    
 .categoryBtn button{
-    width:100px;
+    width:70%;
     border-radius:25px;
     background-color: #888;
+    height:35px;
+    border-style:none;
     }
-    .categoryBtn:hover{
-        background-color: !important #ebd35b;
-    }
+    .sticky {
+    position: fixed;
+    width:100%;
+    max-width:1500px;
+    background-color:#fff;
+    top: 0;
+
+}
     
     .img-container{
         width:100%;
@@ -90,13 +103,15 @@ img {margin-bottom: 0px}
 <div class="w3-clear"></div>
     
 <header class="w3-center w3-margin-bottom" >
-  <h1><b>Portfolio</b></h1>
+  <h1><b>Zac Lopez-Ibanez</b></h1>
   <p><b>A smattering of work</b></p>
-    <p class="w3-padding-16 w3-third categoryBtn" style="width:33%; "><button id="catbtn2D"class="w3-button " onclick="twoDFunction()">2D</button></p>
+    <div id="buttonContainer">
+    <p class="w3-padding-16 w3-third categoryBtn " style="width:33%; "><button id="catbtn2D"class="" onclick="twoDFunction()">2D</button></p>
     
-    <p class="w3-padding-16 w3-third categoryBtn" style="width:33%; "><button id="catbtn3D" class="w3-button " onclick="threeDFunction()">3D</button></p>
+    <p class="w3-padding-16 w3-third categoryBtn " style="width:33%; "><button id="catbtn3D" class="" onclick="threeDFunction()">3D</button></p>
     
-    <p class="w3-padding-16 w3-third categoryBtn" style="width:33%; "><button id="catbtn4D" class="w3-button " onclick="fourDfunction()">4D</button></p>
+    <p class="w3-padding-16 w3-third categoryBtn " style="width:33%; "><button id="catbtn4D" class=" " onclick="fourDfunction()">4D</button></p>
+        </div>
 </header>
     
 </div>
@@ -490,7 +505,26 @@ img {margin-bottom: 0px}
  
 <script>
     
+    /* buttonConatainer sticky after y scroll*/
     
+    var y = window.scrollY;
+    
+    
+      console.log(y);  
+        
+    /*stick button bar when scroll past offset*/
+window.onscroll = function() {myFunction()};
+
+var btnBar = document.getElementById("buttonContainer");
+var sticky = btnBar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    btnBar.classList.add("sticky");
+  } else {
+    btnBar.classList.remove("sticky");
+  }
+}
     
     function modalOpen(id){
         document.getElementById(id).style.display='block'
@@ -504,7 +538,7 @@ img {margin-bottom: 0px}
      document.getElementById("2DGrid").style.display = "none";
     document.getElementById("3DGrid").style.display = "block";
     document.getElementById("4DGrid").style.display = "none";
-    document.getElementById("catbtn3D").style.backgroundColor="!Important #ebd35b";
+    //document.getElementById("catbtn3D").style.backgroundColor="!Important #ebd35b";
 
  
   
@@ -534,11 +568,12 @@ function twoDFunction() {
 } 
     
 function threeDFunction(){
-    document.getElementById("2DGrid").style.display = "none";
-    document.getElementById("catbtn2D").style.backgroundColor="#888";
     
     document.getElementById("3DGrid").style.display = "block";
     document.getElementById("catbtn3D").style.backgroundColor="#ebd35b";
+    
+    document.getElementById("2DGrid").style.display = "none";
+    document.getElementById("catbtn2D").style.backgroundColor="#888";
     
     document.getElementById("4DGrid").style.display = "none";
     document.getElementById("catbtn4D").style.backgroundColor="#888";
@@ -546,14 +581,16 @@ function threeDFunction(){
 }
     
 function fourDfunction(){
+    document.getElementById("4DGrid").style.display = "block";
+    document.getElementById("catbtn4D").style.backgroundColor="#ebd35b";
+    
     document.getElementById("2DGrid").style.display = "none";
     document.getElementById("catbtn2D").style.backgroundColor="#888";
     
     document.getElementById("3DGrid").style.display = "none";
     document.getElementById("catbtn3D").style.backgroundColor="#888";
     
-    document.getElementById("4DGrid").style.display = "block";
-    document.getElementById("catbtn4D").style.backgroundColor="#ebd35b";
+    
     console.log("three");
 }
 </script>
