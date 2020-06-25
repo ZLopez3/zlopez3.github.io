@@ -14,32 +14,38 @@ html{
     height:100%;
     margin:0;
     padding:0;
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 body{
-margin:0 auto;
 
+margin:0;
+    padding:0;
     width:100%;
-   height:100%;
+   //height:100%;
 
 }
 
 .page-container{
-    margin:0 auto;
-    width:100%;
-    height:100%;
+    margin:0;
+    padding:0;
+    //width:100%;
+    //height:100%;
     background-color:#f2f2f2;
+    
+}
+.background{
+    
 }
 
 .background img{
        display: block;
     position: relative;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     top: 100px;
     opacity: 0.7;
-    width: 80%;
-    max-width: 550px;
+    max-width: 435px;
+    //max-height: 737px;;
 
 }
 
@@ -47,7 +53,7 @@ margin:0 auto;
 position: absolute;
     margin: 0 auto;
     left: 52.7%;
-    top: 450px;
+    top: 400px;
     opacity:0.3;
     
     
@@ -77,8 +83,8 @@ position: absolute;
   color:#f2de9b;
 }
 #info h2{
-     position: absolute;
-    bottom:100px;
+    position: relative;
+    bottom:50px;
     left:40px;
     color:#999;
     opacity: 0.5;
@@ -103,30 +109,35 @@ position: absolute;
     height: 100px;
     margin: 0;
 }
+#vertical{
+  width:100px;
+  height:100px;
+}
 #vertical h2:hover{
     color:#f2de9b;
 }
 #line h2{
-    margin:20px 0;
+    margin: 0;
      position: relative;
     padding:10px;
-    left: 73%;
+    left: 63%;
     top:-100px;
     color: #999;
     opacity: 0.9;
     font-weight: 200;
-    width:200px;
+    min-width:200px;
 }
 #circ{
-     margin:0 ;
+     margin:0 auto ;
     padding:0;
-    position: absolute;
-    right: 5%;
-    bottom: 50px;
+    position: relative;
+    left: 400px;
+    bottom: 100px;
     width: 50px;
     height:50px;
     border: solid #777 1px;
     border-radius: 50px;
+    //transform: translate(25px,25px);
     display:block;
     transition: all 1s ease-out;
     
@@ -245,13 +256,14 @@ position:absolute;
     #maintext{
         overflow: hidden;
         position: absolute;
+        display:none;
     margin: 0 auto;
     left: 33.7%;
-    top: 340px;
+    top: 240px;
         
     }
     #circ{
-        display:none;
+        display:none !important;
     }
     #line h2{
         top: 100px;
@@ -261,19 +273,19 @@ position:absolute;
         display:none;
     }
     #info h2{
-        top:585px;
+        bottom:5%;
         left:40px;
         margin-bottom:0;
     }
     .page-container{
         padding-top:50px;
+        height:80%;
     }
 }
-/*
-@media only screen and (min-width: 600px) {
+
+@media only screen and (max-width: 1024px) {
     
-.mobilenav #myLinks{
-       visibility:hidden; 
+#circ{
+        display:none !important;
     }
 }
-*/

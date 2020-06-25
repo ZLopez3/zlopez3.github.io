@@ -59,6 +59,8 @@ img {margin-bottom: 0px}
         padding:20px;
         //min-width: 500px;
     }
+    
+  
     @media only screen and (min-width: 375px) {
         video{
             width:360px;
@@ -424,7 +426,21 @@ img {margin-bottom: 0px}
    
 <div class="w3-row" id="3DGrid" style="margin-bottom:128px">
   <div class="w3-third">
-    <img src="images/portfolio/3d/Fehlo_bowl.jpg" style="width:100%">
+      <!--3D row left-->
+      <div class="img-container ">
+        
+        <img id="gridimg"src="images/portfolio/3d/Fehlo_bowl.jpg" style="width:100%" onclick="modalOpen('3dL01')"> <div id="3dL01" class="w3-modal" style="opacity:1; ">
+            <div class="w3-modal-content " style="margin-bottom:50px; opacity:1;">
+   
+              <div class="w3-container" style="opacity:1;">
+               <i class=" w3-button w3-display-topright" onclick="modalClose('3dL01')" style="font-size:30px; font-style: normal; text-align: center;" ;>&times;</i>
+                  <img src="images/portfolio/3d/Fehlo_bowl.jpg" class="modalimg" style="opacity:1;">         
+                <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <img src="" style="width:100%">
     
     <img src="images/portfolio/3d/ZacLopez06_14_03.jpg" style="width:100%">
     <img src="images/portfolio/3d/ZacLopez06_14_07.jpg" style="width:100%">
