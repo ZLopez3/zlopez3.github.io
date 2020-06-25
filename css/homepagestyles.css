@@ -90,6 +90,12 @@ position: absolute;
 #info h2:hover{
     color:#f2de9b;
 }
+#vertical{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:20%;
+}
 #vertical h2{
     position: relative;
     padding-right: 0px;
