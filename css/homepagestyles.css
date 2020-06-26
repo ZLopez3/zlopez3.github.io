@@ -73,8 +73,7 @@ position: relative;
     opacity:0.6;
 }
 #work h2:hover{
-    
-    color:#f2de9b;
+color:#333;
 }
 #cv h2{
      position: absolute;
@@ -87,7 +86,7 @@ position: relative;
     
 }
 #cv h2:hover{
-  color:#f2de9b;
+  color:#333;
 }
 #info h2{
      position: absolute;
@@ -102,7 +101,7 @@ position: relative;
     
 }
 #info h2:hover{
-    color:#f2de9b;
+    color:#333;
 }
 #vertical{
     position:relative;
@@ -110,11 +109,12 @@ position: relative;
     height:100px;
     left:20%;
 }
+
 #vertical h2{
     position: relative;
     padding-right: 0px;
-    //left: 21%;
-    top: -520px;
+    
+    top: -540px;
     color: #999;
     opacity: 0.9;
     font-weight: 200;
@@ -124,26 +124,23 @@ position: relative;
     margin: 0;
 }
 #vertical h2:hover{
-    color:#f2de9b;
+    color:#333;
 }
 #line{
     position: relative;
     left: 70%;
     top: -300px;
     opacity:0.2;
+    width:200px
 }
-/*
+
 #line h2{
-    margin: 0;
-     position: relative;
-    padding:10px;
-    left: 73%;
-    bottom:0px;
+   
     color: #999;
     opacity: 0.9;
     font-weight: 200;
     width:200px;
-}*/
+}
 #circ{
      margin:0 ;
     padding:0;
