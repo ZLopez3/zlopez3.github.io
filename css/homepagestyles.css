@@ -108,12 +108,12 @@ color:#333;
     width:100px;
     height:100px;
     left:20%;
+    top:-180px;
 }
 
 #vertical h2{
     position: relative;
     padding-right: 0px;
-    
     top: -540px;
     color: #999;
     opacity: 0.9;
@@ -155,6 +155,21 @@ color:#333;
     transition: all 1s ease-out;
     
 }
+i{
+    color:#000;
+    padding:5px;
+   opacity:0.6;
+}
+i:hover{
+    color:#e39878;
+    
+}
+footer{
+    margin-top: 0px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
 #circ:hover{
     background-image:url(../images/playbutton_light.png);
     background-size: 100%;
