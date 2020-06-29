@@ -1,14 +1,29 @@
 /*
  * Globals
  */
-
+     @font-face{
+    font-family: 'Didot';
+    src: url('fonts/HTF-Didot/Didot HTF L42 Light.otf') format('opentype'),
+         url('fonts/HTF-Didot/Didot HTF M42 Medium.otf') format('opentype'), url('fonts/HTF-Didot/Didot HTF B42 Bold.otf') format('opentype');
+}
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
-
+ h1,h2,h3,.subTitle{
+         font-family:"Didot, sans-serif";
+     }
+     h5{
+         font-family:"Didot, sans-serif";
+         color:#fff;
+     }
+     h5:hover{
+         color:rgba(255,255,255,0.5);
+     }
+     
+    
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -24,25 +39,43 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+
+html, body {
   height: 100%;
   background-color: #333;
+    
 }
+
 
 body {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  //box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   
 }
 body.home{
   background-image:url("images/CAFE-GITANE_1920x1080Web_yellow.jpg");
   background-size:cover;
+
 }
 
+img.kitchen:hover{
+    
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #C5D8DC;
+}
 .cover-container {
   max-width: 42em;
 }
@@ -53,6 +86,7 @@ body.home{
  */
 .masthead {
   margin-bottom: 2rem;
+
 }
 
 .masthead-brand {
@@ -89,7 +123,11 @@ body.home{
     float: right;
   }
 }
-
+.main{
+   
+    width:100%;
+   height:100%
+}
 
 /*
  * Cover
