@@ -64,13 +64,14 @@
 }
           
           #return{
-              width:2em;
-              height:2em;
+              width:1.5em;
+              height:1.5em;
               position:relative; 
               left:100%; 
-              top:16px; 
+              top:10px; 
               z-index:3; 
               cursor:pointer;
+              background-color:#000;
               transition: opacity .2s ease-in-out;
             
           }    
@@ -83,7 +84,7 @@
             <div class="inner">
                 <a href="index.html"><h3 class="masthead-brand">Café Magritte</h3></a>
                  <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link " href="index.html"><h5>Home</h5></a>
+        
         <a class="nav-link active" href="menu.html"><h5>Menu</h5></a>
         <a class="nav-link" href="contact.html"><h5>Contact</h5></a>
           <a class="nav-link" href="about.html"><h5>About</h5></a>
@@ -121,6 +122,7 @@
           function cardflip(){
   
               r.style.opacity = "0.0";
+              
              
   var cardclass = document.getElementById("flip-card");
              // if(cardclass.classList === "flip-card"){}
