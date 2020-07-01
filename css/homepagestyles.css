@@ -303,8 +303,8 @@ position:absolute;
         display:none;
     }
     #info h2{
-        bottom:30px;
-        left:40px;
+        top:45px;
+        left:47%;
         margin-bottom:0;
         font-size:18px;
     }
