@@ -8,192 +8,233 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
-html,body,h1,h2,h3,h4,h5,h6,h7,p {font-family: 'Open Sans', sans-serif;line-height: 1;}
-    h6,h7, p{
-      
-      font-weight: 300;
-      line-height:1.5;
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h7,
+    p {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1;
     }
-    h5{
-        font-weight:600;
-        line-height:1.2;
+
+    h6,
+    h7,
+    p {
+
+        font-weight: 300;
+        line-height: 1.5;
     }
-    body{
-        background-color:#f2f2f2;
+
+    h5 {
+        font-weight: 600;
+        line-height: 1.2;
     }
-    a{
+
+    body {
+        background-color: #f2f2f2;
+    }
+
+    a {
         text-decoration: none;
     }
-    .return{
-        position:absolute;
-        width:150px;
-        height:35px;
-        background-color:#ebd35b;
-        top:0px;
-        left:16px;
+
+    .return {
+        position: absolute;
+        width: 150px;
+        height: 35px;
+        background-color: #ebd35b;
+        top: 0px;
+        left: 16px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        opacity:0.7;
+        opacity: 0.7;
         transition: 1s ease-in-out;
-        box-shadow:5px 0px 15px #777; 
+        box-shadow: 5px 0px 15px #777;
     }
-    .return i{
-        display:none;
-        position:relative;
+
+    .return i {
+        display: none;
+        position: relative;
         vertical-align: middle;
-        left:20px;
-        top:-4px;
+        left: 20px;
+        top: -4px;
         animation-name: backbutton;
-        animation-duration:  1.2s;
+        animation-duration: 1.2s;
         animation-timing-function: ease-in-out;
     }
-    .return:hover i{
-        display:block;
+
+    .return:hover i {
+        display: block;
     }
-    .return:hover{
-        opacity:1;
-        box-shadow:5.3px 2.3px 15px #888; 
+
+    .return:hover {
+        opacity: 1;
+        box-shadow: 5.3px 2.3px 15px #888;
     }
-    @keyframes backbutton{
-        0%{left:90px; opacity:0.0;}
-        100%{left:20px; opacity:1;}
+
+    @keyframes backbutton {
+        0% {
+            left: 90px;
+            opacity: 0.0;
+        }
+
+        100% {
+            left: 20px;
+            opacity: 1;
+        }
     }
-    
-   
-    .line{
+
+
+    .line {
         -webkit-animation: line 1s linear forwards;
-        
-        
-        
+
+
+
     }
-    @-webkit-keyframes line{
-        from {
-           
-           
+
+    @-webkit-keyframes line {
+        from {}
+
+        to {}
+    }
+
+    .headerTitle {
+        margin: 20px 0 10px 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        div.w3-twothird.w3-cell.w3-container.headerTitle {
+            margin: 5px;
+            padding: 0;
         }
-        to{
-          
+
+        .return i {
+            display: block;
         }
     }
-    .headerTitle{
-        margin:20px 0 10px 0px;
-    }
-    @media only screen and (max-width: 600px){
-        div.w3-twothird.w3-cell.w3-container.headerTitle{
-            margin:5px;
-            padding:0;
-        }
-        .return i{
-            display:block;
-        }
-    }
-    
+
     @media only screen and (max-width: 400px) {
-    .headerTitle p{
+        .headerTitle p {
             margin: 20px 0 10px 20px;
-}
+        }
 
 
     }
-    
+
 </style>
-    
-<body class="w3-margin" >
-   <a href="top"></a> 
-    
-    
-    
-    
 
-<!--return bar-->
-<a href="index.html"><div class="return"><i class='material-icons' style='font-size:24px; padding:10px'>first_page</i></div></a>
-
-<div class="w3-content" style="max-width:1400px; margin-top:50px; margin-bottom:50px;padding-bottom:0px; background-color:#fff; box-shadow:10px 10px 20px #999 ">
-   
-    
-    <!-- Page Container -->
-<div class="w3-row w3-white w3-container header" >
-    
-  <div class="w3-third w3-cell w3-container">
-      <svg height="100%" width="100%"><line class="line" x1="90%" y1="0" x2="90%" y2="100%" style="stroke:rgb(0,0,0); stroke-width:1"/></svg>
-  </div>
-  <div class="w3-twothird w3-cell w3-container headerTitle" >
-      <p class="w3-xxlarge headerTitle"><b>Zac <br> Lopez-Ibanez</b></p>
-      <p class="w3-large headerTitle" style="margin:0 0 10px 0px;"></p>
-  </div>
-    
-    
+<body class="w3-margin">
+    <a href="top"></a>
 
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third leftCol" style="padding:0;">
-        <div class="w3-container">
-          <p class="w3-xlarge"><b>Bio</b></p>
 
-        </div>
-    </div><!-- End Left Column -->
 
-    <!-- Right Column -->
-    <div class="w3-twothird rightCol" style="padding:0;">
-      <div class="w3-container  w3-white" style="float:right;">
-       <hr>
-        <p>Zac Lopez-Ibanez is a designer and creative entrepreneur. His design work spans a variety of media including furniture, graphic and video design as well residential architecture. Zac will receive his Bachelor of Arts in New Media from UNCA in the Fall of 2020. There, his concentration in interactive media and video art have been underpinned by his course work in computer science and business. In addition,  he pursued a degree at the Savannah College of Art and Design for 2 ½ years, with a focus on product design, prior to finishing his degree at the University of North Carolina.<br><br>
-            
-        His work has appeared in national publications including Dwell Design, The L.A. Times, and Carolina Home + Garden. He has delivered lectures at Rhode Island School of Design (RISD) as well as Appalachian State University in Design and Industrial Design practices, and was awarded the best in show award from Dwell on Design in 2015. <br><br>
-              
-        Zac is currently working as a product designer for the creative design firm Anthroware in Asheville, NC. Here, he specializes in brand development, UX/UI design, and business strategy in an effort to help other creative entrepreneurs succeed. Zac lives in Asheville, North Carolina with his wife, two children, a curious bunny, and their faithful dog Silo.</p>
-          <hr>
-      </div> 
-        
-         <!--Contact Form-->
-    <form style="margin:auto;width:90%" action="/action_page.php" target="_blank">
-    
-    <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
-    <div class="w3-section">
-      <label><b>Name</b></label>
-      <input class="w3-input w3-border" type="text" required name="Name">
+
+    <!--return bar-->
+    <a href="index.html">
+        <div class="return"><i class='material-icons' style='font-size:24px; padding:10px'>first_page</i></div>
+    </a>
+
+    <div class="w3-content" style="max-width:1400px; margin-top:50px; margin-bottom:50px;padding-bottom:0px; background-color:#fff; box-shadow:10px 10px 20px #999 ">
+
+
+        <!-- Page Container -->
+        <div class="w3-row w3-white w3-container header">
+
+            <div class="w3-third w3-cell w3-container">
+                <svg height="100%" width="100%">
+                    <line class="line" x1="90%" y1="0" x2="90%" y2="100%" style="stroke:rgb(0,0,0); stroke-width:1" /></svg>
+            </div>
+            <div class="w3-twothird w3-cell w3-container headerTitle">
+                <p class="w3-xxlarge headerTitle"><b>Zac <br> Lopez-Ibanez</b></p>
+                <p class="w3-large headerTitle" style="margin:0 0 10px 0px;"></p>
+            </div>
+
+
+
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third leftCol" style="padding:0;">
+                    <div class="w3-container">
+                        <p class="w3-xlarge"><b>Bio</b></p>
+
+                    </div>
+                </div><!-- End Left Column -->
+
+                <!-- Right Column -->
+                <div class="w3-twothird rightCol" style="padding:0;">
+                    <div class="w3-container  w3-white" style="float:right;">
+                        <hr>
+                        <p>Zac Lopez-Ibanez is a designer and creative entrepreneur. His design work spans a variety of media including furniture, graphic and video design as well residential architecture. Zac will receive his Bachelor of Arts in New Media from UNCA in the Fall of 2020. There, his concentration in interactive media and video art have been underpinned by his course work in computer science and business. In addition, he pursued a degree at the Savannah College of Art and Design for 2 ½ years, with a focus on product design, prior to finishing his degree at the University of North Carolina.<br><br>
+
+                            His work has appeared in national publications including Dwell Design, The L.A. Times, and Carolina Home + Garden. He has delivered lectures at Rhode Island School of Design (RISD) as well as Appalachian State University in Design and Industrial Design practices, and was awarded the best in show award from Dwell on Design in 2015. <br><br>
+
+                            Zac is currently working as a product designer for the creative design firm Anthroware in Asheville, NC. Here, he specializes in brand development, UX/UI design, and business strategy in an effort to help other creative entrepreneurs succeed. Zac lives in Asheville, North Carolina with his wife, two children, a curious bunny, and their faithful dog Silo.</p>
+                        <hr>
+                    </div>
+
+                    <!--Contact Form-->
+                    <form style="margin:auto;width:90%" action="/action_page.php" target="_blank">
+
+                        <p class="w3-large w3-text-pink">Get in touch!</p>
+                        <div class="w3-section">
+                            <label><b>Name</b></label>
+                            <input class="w3-input w3-border" type="text" required name="Name">
+                        </div>
+                        <div class="w3-section">
+                            <label><b>Email</b></label>
+                            <input class="w3-input w3-border" type="text" required name="Email">
+                        </div>
+                        <div class="w3-section">
+                            <label><b>Message</b></label>
+                            <input class="w3-input w3-border" required name="Message">
+                        </div>
+                        <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+                    </form>
+                </div>
+
+
+
+            </div><!-- End Grid -->
+
+        </div><!-- End Page Container -->
+
+
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+
+            <a href="https://www.instagram.com/zlopappypants/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.pinterest.com/zaclopezibanez/boards/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/zac-lopez-ibanez-9348a234/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+        </footer>
     </div>
-    <div class="w3-section">
-      <label><b>Email</b></label>
-      <input class="w3-input w3-border" type="text" required name="Email">
-    </div>
-    <div class="w3-section">
-      <label><b>Message</b></label>
-      <input class="w3-input w3-border" required name="Message">
-    </div>
-    <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-  </form>
-    </div>
-        
-    
-  
-  </div><!-- End Grid -->
 
-</div><!-- End Page Container -->
-    
-   
-    
-  <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
-    
-  <a href="https://www.instagram.com/zlopappypants/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://www.pinterest.com/zaclopezibanez/boards/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-  <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/zac-lopez-ibanez-9348a234/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  
-</footer>
-   <script>//Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
- 
-}
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}</script>
+
+    <script>
+        //Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+    </script>
 </body>
+
 </html>
