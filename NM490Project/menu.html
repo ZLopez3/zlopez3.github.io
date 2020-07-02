@@ -25,9 +25,9 @@
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
-           
+
         }
-       
+
 
         .flip-card-inner {
             position: relative;
@@ -70,7 +70,7 @@
         #return {
             width: 1.8em;
             height: 1.8em;
-            
+
             position: relative;
             left: 95%;
             top: 10px;
@@ -85,12 +85,13 @@
             text-align: center;
             margin-bottom: 10px;
         }
-        
+
         @media only screen and (max-width: 400px) {
-            #return{
-                left:93.5%;
-            } 
+            #return {
+                left: 93.5%;
+            }
         }
+
     </style>
 </head>
 
@@ -125,10 +126,10 @@
         <div class="mb-auto container-fluid" id="flip-card" onClick="cardflip() ">
             <div class="flip-card-inner">
                 <div class="flip-card-front ">
-                    <img class="mx-auto d-block img-fluid" src="images/Cafe-Magritte-Menu-Front.jpg" alt="Drinks Menu" >
+                    <img class="mx-auto d-block img-fluid" src="images/Cafe-Magritte-Menu-Front.jpg" alt="Drinks Menu">
                 </div>
                 <div class="flip-card-back ">
-                    <img class="mx-auto d-block img-fluid" src="images/Cafe-Magritte-Menu-Back.jpg" alt="Food Menu" >
+                    <img class="mx-auto d-block img-fluid" src="images/Cafe-Magritte-Menu-Back.jpg" alt="Food Menu">
                 </div>
             </div>
         </div><!-- end of cardflip-->
@@ -150,14 +151,14 @@
 
 
             var cardclass = document.getElementById("flip-card");
-            // if(cardclass.classList === "flip-card"){}
-            //cardclass.classList.add("flip-card");
+            
+          /* add/remove the class name to element*/
 
             if (cardclass.classList) {
 
                 cardclass.classList.toggle("flip-card");
             } else {
-                // For IE9
+                
 
                 var classes = cardclass.className.split(" ");
                 var i = classes.indexOf("flip-card");
@@ -168,6 +169,8 @@
                     classes.push("flip-card");
                 cardclass.className = classes.join(" ");
             }
+            
+            /*delay the return button animation*/
             setTimeout(function() {
                 r.style.opacity = "1"
             }, 300);
