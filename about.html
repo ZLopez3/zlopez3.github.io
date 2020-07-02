@@ -189,7 +189,7 @@
                     
                      <div class="w3-display-middle" style="width:50%">
                         <!--Contact Form-->
-                         <form action="https://formspree.io/zlopez3@gmail.com." method="POST">
+                         <form id="my-form" action="https://formspree.io/mrgyanwl" method="POST">
                          <!--<form class="" style="margin:0 0 20px 0; width:100%" action="action_page.php" target="_blank" method="post">-->
 
                            
@@ -206,7 +206,10 @@
                                 <input class="w3-input w3-border" required name="Message">
                             </div>
                             <button type="submit" class="w3-button w3-block w3-dark-grey" value="Send">Send</button>
+                             
                         </form>
+                         
+                         
                     </div>
                 </div>
                 
@@ -250,6 +253,53 @@
         }
 
     </script>
+    <script>
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("my-form");
+    var button = document.getElementById("my-form-button");
+    var status = document.getElementById("my-form-status");
+
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      button.style = "display: none ";
+      status.innerHTML = "Thanks!";
+    }
+
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script>
 </body>
 
 </html>
