@@ -495,15 +495,15 @@ p {
 }
 
 #productnotes {
-    position: relative;
-    top: -50px;
+    //position: relative;
+    //top: -50px;
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    //flex-direction: row;
+    //align-content: center;
     justify-content: center;
-    align-items: center;
+    //align-items: center;
     width: 95%;
-    height: 500px;
+    height: 100%;
     margin: 40px;
     padding: 20px;
     overflow: hidden;
