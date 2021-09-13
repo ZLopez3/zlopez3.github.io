@@ -1,0 +1,682 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #3c3f44;
+}
+
+a {
+    height: 0px;
+    width:0px;
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    color: #119fb2;
+}
+
+
+
+
+
+#page1 {
+    position: relative;
+    z-index: 4;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 45px;
+    background-color: #d8774e;
+    top: 190px;
+    left: 80px;
+    padding: 10px;
+    margin: 0px;
+    height: 235px;
+    width: 150px;
+    overflow: visible;
+    border: 2px solid #fff;
+    text-align: left;
+    box-shadow: 2px 3px 10px 1px gray;
+}
+
+#page2 {
+    position: relative;
+    z-index: 4;
+    font-family: 'Covered By Your Grace', serif;
+    font-size: 50px;
+    background-color: #91d6d2;
+    top: 200px;
+    left: 180px;
+    padding: 10px;
+    margin: 0px;
+    height: 335px;
+    width: 350px;
+    overflow: visible;
+    border: 2px solid #fff;
+    text-align: left;
+    box-shadow: 2px 3px 10px 1px gray;
+}
+
+#page3 {
+    position: relative;
+    z-index: 0;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 45px;
+    background-color: #d8774e;
+    top: -65px;
+    left: 420px;
+    padding: 10px;
+    padding-left: 40px;
+    margin: 0px;
+    height: 500px;
+    width: 550px;
+    overflow: visible;
+    border: 2px solid #fff;
+    text-align: left;
+    box-shadow: 2px 3px 10px 1px gray;
+}
+
+#page4 {
+    position: relative;
+    z-index: 4;
+    font-family: 'Covered By Your Grace', serif;
+    font-size: 50px;
+    background-color: #91d6d2;
+    vertical-align: middle;
+    top: ;
+    left: 0px;
+    padding: 10px;
+    margin-right: 20px;
+    height: 335px;
+    width: 250px;
+    overflow: visible;
+    border: 2px solid #fff;
+    text-align: left;
+    box-shadow: 2px 3px 10px 1px gray;
+}
+
+.page1-container {
+    background-color: #fff;
+    padding: 50px;
+    width 100%;
+    height: 800px;
+    margin: 0px;
+    display: flex;
+    /*overflow: visible;*/
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.page2-container {
+    background-color: #fff;
+    padding: 0px;
+    padding-top: 0px;
+    width 100%;
+    height: 1200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    overflow: visible;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.page3-container {
+    background-color: #fff;
+    padding: 50px;
+    width 100%;
+    height: 1300px;
+    margin: 0px;
+    display: flex;
+    /*overflow: visible;*/
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.page4-container {
+    background-color: #fff;
+    padding: 50px;
+    width 100%;
+    height: 800px;
+    margin: 0px;
+    display: flex;
+    overflow: visible;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.frame_layout {
+    margin: 5px;
+    padding-right: 0px;
+    padding: 0px;
+    display: flex;
+    left: 0px;
+    overflow: visible;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.frame_layout2 {
+    margin: 5px;
+    padding-right: 0px;
+    padding-left: 400px;
+    display: flex;
+    left: 0px;
+    overflow: visible;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.frame_layout3 {
+    margin: 5px;
+    padding-right: 0px;
+    padding: 0px;
+    display: flex;
+    left: 0px;
+    overflow: visible;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.frame_layout4 {
+    width: 1000px;
+    margin: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.frames {
+    box-shadow: 2px 3px 10px 1px gray;
+    border: 3px solid black;
+    margin: 5px;
+
+}
+
+#frame-1 {
+    min-width: 250px;
+    z-index: 1;
+    width: 250px;
+    height: 501px;
+    background-image: url('../images/Frame1_left.jpg');
+}
+
+#frame-2 {
+    min-width: 0px;
+    width: 84px;
+    height: 501px;
+    background-image: url(../images/Frame1_middle.jpg);
+}
+
+#frame-3 {
+    min-width: 0px;
+    z-index: 0;
+    width: 175px;
+    height: 500px;
+    border-radius: 0px;
+    background-image: url('../images/Frame1_right.jpg');
+}
+
+#frame-4 {
+    padding: 0px;
+    margin: 0px;
+    min-width: 0px;
+    z-index: 1;
+    width: 318px;
+    height: 558px;
+    position: relative;
+    left: 150px;
+    top: -252px;
+
+    border-radius: 0px;
+    background-image: url('../images/P2_Frame4.jpg');
+}
+
+#frame-5 {
+    padding: 0px;
+    margin: 0px;
+    min-width: 0px;
+    z-index: 0;
+    position: relative;
+    top: 320px;
+    left: -173px;
+    width: 318px;
+    height: 451px;
+    border-radius: 0px;
+    background-image: url('../images/P2_Frame5.jpg');
+}
+
+#frame-6 {
+    padding: 0px;
+    margin: 0px;
+    min-width: 0px;
+    position: relative;
+    top: 320px;
+    left: -165px;
+    z-index: 0;
+    width: 381px;
+    height: 451px;
+    border-radius: 0px;
+    background-image: url(../images/P2_Frame6.jpg);
+}
+
+#frame-7 {
+    min-width: 0px;
+    position: relative;
+    top: 48px;
+    left: -551px;
+    z-index: 0;
+    width: 381px;
+    height: 257px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-image: url(../images/P2_Frame7.jpg);
+}
+
+#frame-8 {
+    min-width: 0px;
+    position: relative;
+    top: -252px;
+    left: -938px;
+    z-index: 0;
+    width: 381px;
+    height: 288px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-image: url(../images/P2_Frame8.jpg);
+}
+
+#frame-9 {
+    min-width: 0px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    z-index: 0;
+    width: 600px;
+    height: 447px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-image: url(../images/Frame_3_Web.jpg);
+}
+
+#frame-10 {
+    min-width: 0px;
+    position: relative;
+    top: 252px;
+    left: 110px;
+    z-index: 2;
+    width: 400px;
+    height: 533px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-image: url(../images/Frame5_noKickWeb.jpg);
+    /*background-image: url(../images/Frame5_kickWeb.jpg); */
+}
+
+#frame-11 {
+    min-width: 0px;
+    position: relative;
+    top: -200px;
+    left: -588px;
+    z-index: 0;
+    width: 400px;
+    height: 529px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-image: url(../images/Frame-11.jpg);
+    background-color: darkgrey;
+}
+
+#frame-12 {
+    position: relative;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
+    z-index: 1;
+   background-image: url(../images/Booger1.jpg);
+}
+
+
+.selections {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    /*border:2px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: visible;
+    margin-left;
+    margin-top: 0px;
+    padding-left: 0px;
+
+    z-index: 2;
+
+
+    /* z-index 3;
+    display: ;
+    flex-flow: column;
+    flex-direction: column;*/
+
+}
+
+/*button class for each page*/
+.buttons {
+    position: relative;
+    left: 450px;
+}
+
+.buttons2 {
+
+    position: relative;
+    left: 450px;
+
+}
+
+.buttons3 {
+    position: relative;
+    top: -220px;
+    left: 550px;
+}
+
+.buttons4 {
+    position: relative;
+    justify-content: center;
+    left: 570px;
+}
+
+
+/*310-393 are action panels activated by javascript*/
+.actions {
+    width: 100%;
+    display: flex;
+    position: inherit;
+    margin: 0;
+    justify-content: center;
+    overflow: visible;
+    z-index: 2;
+    width: 500px;
+    height: 500px;
+    /*border: 2px solid black;*/
+}
+
+#anima {
+    /*background-image: url(../images/Frame1.gif);*/
+    /*border: 2px solid black;*/
+    width: 499px;
+    height: 500px;
+    position: relative;
+    left: 65px;
+    top: -10px;
+    z-index: 5;
+    filter: blur(5px);
+}
+
+#bubble {
+    /*background-image: url('../images/Frame1_bubble.png');*/
+    /*border:2px solid black;*/
+    width: 118px;
+    height: 118px;
+    position: inherit;
+    left: 200px;
+    top: 250px;
+    z-index: 5;
+}
+
+#arm {
+    /*background-image: url(../images/arm.png); */
+    /*border:2px solid black;*/
+    position: inherit;
+    width: 200px;
+    height: 249px;
+    left: 350px;
+    top: 250px;
+    z-index: 5;
+    /*filter: drop-shadow(5px 7px 10px #fff);*/
+}
+
+#bubble2 {
+    width: 200px;
+    height: 107px;
+    position: inherit;
+    left: 350px;
+    top: 90px;
+    z-index: 7;
+    /*border:2px solid black;*/
+     /*background-image: url('../images/Frame2-bubble.png');*/
+}
+
+#silhouette {
+    width: 381px;
+    height: 450px;
+    position: inherit;
+    left: 218px;
+    top: 290.5px;
+    z-index: 7;
+    /*border:2px solid black;*/
+    /*background-image: url('../images/silhouette.png');*/
+}
+
+#mouse {
+    position: inherit;
+    width: 318px;
+    height: 451px;
+    top: 291px;
+    left: -114px;
+    /*border:2px solid black;*/
+     /*background-image: url(../images/P2_Frame5_mouse.jpg);*/
+}
+
+#mousebubble {
+    position: inherit;
+    top: 540px;
+    left: -180px;
+    width: 100px;
+    height: 100px;
+    /*border:2px solid black;*/
+    z-index: 5;
+    /*background-image: url(../images/mousebubble.png);*/
+}
+
+#kick {
+    min-width: 0px;
+    position: relative;
+    top: 255px;
+    left: 512px;
+    z-index: 5;
+    width: 400px;
+    height: 533px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    /*border: 2px solid black;*/
+    /*background-image: url(../images/Frame5_kickWeb.jpg); */
+}
+
+#rgFlash {
+    position: inherit;
+    top: 365px;
+    left: 138px;
+    width: 20px;
+    height: 25px;
+    /*border:2px solid black;*/
+    z-index: 6;
+     /*background-image: url(../images/rgFlash.gif);*/
+}
+
+#bubble3 {
+    position: inherit;
+    top: -130px;
+    left: 430px;
+    width: 201px;
+    height: 101px;
+    z-index: 5;
+   /* background-image: url(../images/P3_Bubble.png);*/
+}
+#booger2 {
+    position: relative;
+    top: -50px;
+    left: -11px;
+    width: 800px;
+    height: 600px;
+    z-index: 8;
+    /* border: solid;*/
+    /*background-image: url(../images/Booger2.jpg);*/
+}
+/* page link buttons for each page*/
+#nextpane {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+    overflow: visible;
+    background-color: #e2d45f;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    font-size: 75px;
+    line-height: ;
+    text-indent: 0px;
+    position: relative;
+    left: -150px;
+    top: 470px;
+    width: 200px;
+    height: 100px;
+    z-index: 6;
+}
+
+#nextpane2 {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+    overflow: visible;
+    background-color: #e2d45f;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    font-size: 75px;
+    line-height: ;
+    text-indent: 0px;
+    position: relative;
+    left: -1050px;
+    top: 710px;
+    width: 200px;
+    height: 100px;
+    z-index: 6;
+}
+
+#nextpane3 {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+    overflow: visible;
+    background-color: #e2d45f;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    font-size: 75px;
+    line-height: ;
+    text-indent: 0px;
+    position: relative;
+    left: -450px;
+    top: 705px;
+    width: 200px;
+    height: 100px;
+    z-index: 6;
+}
+#nextpane4 {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+    overflow: visible;
+    background-color: #e2d45f;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    font-size: 75px;
+    line-height: ;
+    text-indent: 0px;
+    position: relative;
+    left: -250px;
+    top: 328px;
+    width: 200px;
+    height: 100px;
+    z-index: 6;
+}
+
+
+/* Button attributes and hover states*/
+#rightside-button1 {
+    background-color: rgb(216, 119, 78);
+    box-shadow: 2px 3px 10px 1px gray;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#rightside-button2 {
+    background-color: rgb(216, 119, 78);
+    box-shadow: 2px 3px 10px 1px gray;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#rightside-button3 {
+    background-color: rgb(216, 119, 78);
+    box-shadow: 2px 3px 10px 1px gray;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#rightside-button1:hover {
+    background-color: rgb(226, 134, 95);
+    transform: scale(1.05, 1.05);
+}
+
+#rightside-button2:hover {
+    background-color: rgb(226, 134, 95);
+    transform: scale(1.05, 1.05);
+}
+
+#rightside-button3:hover {
+    background-color: rgb(226, 134, 95);
+    transform: scale(1.05, 1.05);
+}
+
+#nextpane:hover {
+    transform: scale(1.05, 1.05);
+
+}

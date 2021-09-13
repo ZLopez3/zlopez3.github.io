@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/graphicNovel.css">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace| Ubuntu+Mono" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page1-container">
+        <div class="frame_layout">
+            <p id="page1">From the sound of it, this day just got interesting.</p>
+            <div id="frame-1" class="frames"></div>
+            <div id="frame-2" class="frames"></div>
+            <div id="frame-3" class="frames"></div>
+            <a href="graphic2.html">
+                <div id="nextpane">Follow?</div>
+            </a>
+        </div>
+        <!--end of frame_layout-->
+        <div class="selections">
+           <div class="buttons">
+                <div id="rightside-button1" onmouseover="getItem(bubble)" onmouseout="normalImg(bubble)"></div>
+                <div id="rightside-button2" onmouseover="getItem(arm)" onmouseout="normalImg(arm)"></div>
+                <div id="rightside-button3" onmouseover="getItem(anima)" onmouseout="normalImg(anima)"></div>
+           </div>
+            <div class="actions">
+                <div id="anima"></div>
+                <div id="bubble"></div>
+                <div id="arm"></div>
+            </div>
+            <!--end of actions-->
+        </div>
+        <!--end of selection-->
+
+
+
+    </div>
+    <!--end of flex-container-->
+   
+<script>
+    function getItem(idtype) {
+        
+       switch (idtype) {
+           case anima: url="url('images/Frame1.gif')";
+               document.getElementById("anima").style.backgroundImage = url;
+               break;
+           case bubble: url="url('images/Frame1_bubble.png')";
+               document.getElementById("bubble").style.backgroundImage = url;
+               break;
+           case arm: url="url('images/arm.png')";
+               document.getElementById("arm").style.backgroundImage = url;
+               break;
+       }
+        
+     
+    }
+    
+        function normalImg(idtype) {
+        
+           switch (idtype) {
+           case anima: 
+               document.getElementById("anima").style.backgroundImage = "url('')";
+               break;
+           case bubble: 
+               document.getElementById("bubble").style.backgroundImage = "url('')";
+               break;
+           case arm: 
+               document.getElementById("arm").style.backgroundImage = "url('')";
+               break;
+            
+       }
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/graphicNovel.css">
+   <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+   <div class="page2-container">
+        <div class="frame_layout2">
+            <p id="page2">It's not often one makes a choice that could redefine their future. </p>
+            <div id="frame-4" class="frames"></div>
+            <div id="frame-5" class="frames"></div>
+            <div id="frame-6" class="frames"></div>
+            <div id="frame-7" class="frames"></div>
+            <div id="frame-8" class="frames"></div>
+            <a href="graphic3.html">
+                <div id="nextpane2">Go In?</div>
+            </a>
+        
+        </div><!--end of frame_layout-->
+       <div class="selections">
+            <div class="buttons2">
+                <div id="rightside-button1" onmouseover="getItem(bubble2)" onmouseout="normalImg(bubble2)"></div>
+                <div id="rightside-button2" onmouseover="getItem(silhouette)" onmouseout="normalImg(silhouette)"></div>
+                <div id="rightside-button3" onmouseover="getItem(mouse)"  onmouseout="normalImg(mouse) "></div>
+           </div>
+            <div class="actions">
+                <div id="bubble2"></div>
+                <div id="silhouette"></div>
+                <div id="mouse"></div>
+                <div id="mousebubble"></div>
+            </div> <!--end of actions-->
+        </div><!--end of selection-->
+
+    </div> <!--end of page2 container-->
+    
+    
+     <!--<script src="script/graphicNovelScript.js" type="text/javascript"></script>-->
+    
+<script>
+    
+function getItem(idtype) {
+        
+       switch (idtype) {
+            case bubble2: 
+               document.getElementById("bubble2").style.backgroundImage = "url('images/Frame2-bubble.png')";
+               break;
+           case silhouette: 
+               document.getElementById("silhouette").style.backgroundImage = "url('images/silhouette.png')";
+               break;
+               case mouse: 
+               document.getElementById("mouse").style.backgroundImage = "url('images/P2_Frame5_mouse.jpg')";
+               break;
+                case mousebubble: 
+               document.getElementById("mousebubble").style.backgroundImage = "url('images/mousebubble.png')";
+               break;
+       }
+      
+    }
+    
+    function normalImg(idtype) {
+        
+           switch (idtype) {
+         
+            case bubble2: 
+               document.getElementById("bubble2").style.backgroundImage = "url('')";
+               break;
+            case silhouette: 
+               document.getElementById("silhouette").style.backgroundImage = "url('')";
+               break;
+            case mouse: 
+               document.getElementById("mouse").style.backgroundImage = "url('')";
+               break;
+            case mousebubble: 
+               document.getElementById("mousebubble").style.backgroundImage = "url('')";
+               break;
+       }
+    }
+    </script>
+</body>
+</html>
