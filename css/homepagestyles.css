@@ -93,6 +93,7 @@ color:#ff6767;
     color:#333;
 }
 #vertical{
+    color:;
 }
 
 #vertical h2{
@@ -129,7 +130,7 @@ color:#ff6767;
     padding:0;
     position: relative;
     left: 85%;
-    bottom:15%;
+    bottom:100px;
     width: 50px;
     height:50px;
     border: solid #777 1px;
